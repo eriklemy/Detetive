@@ -5,6 +5,7 @@ O  objetivo desse trabalho é desenvolver um jogo de detetive no qual você vai 
 de inferência para deduzir a conclusão. 
 
 
+
 ---
 Incidente no reino..
 
