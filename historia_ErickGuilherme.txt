@@ -1,9 +1,4 @@
-- trabalho pratico 1: Tabela da Verdade 
-    - O trabalho foi desenvolvido em C++.
-    
-O  objetivo desse trabalho é desenvolver um jogo de detetive no qual você vai utilizar regras 
-de inferência para deduzir a conclusão. 
-
+NOME: Erick Lemmy e Guilherme Janke
 
 ### HISTORIA EM CONSTRUÇÃO
 ---
