@@ -16,3 +16,11 @@ SecWindow::~SecWindow()
 {
     delete ui;
 }
+
+void SecWindow::on_pushButton_clicked()
+{
+    hide();
+    thirdWindow = new ThirdWindow(this);
+    thirdWindow->show();
+}
+

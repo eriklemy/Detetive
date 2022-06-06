@@ -24,6 +24,9 @@ set(PROJECT_SOURCES
         secwindow.h
         secwindow.cpp
         secwindow.ui
+        thirdwindow.cpp
+        thirdwindow.h
+        thirdwindow.ui
         images.qrc
         ${TS_FILES}
 )

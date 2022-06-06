@@ -2,6 +2,7 @@
 #define SECWINDOW_H
 
 #include <QMainWindow>
+#include "thirdwindow.h"
 
 namespace Ui {
 class SecWindow;
@@ -15,8 +16,13 @@ public:
     explicit SecWindow(QWidget *parent = nullptr);
     ~SecWindow();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::SecWindow *ui;
+    ThirdWindow *thirdWindow;
+
 };
 
 #endif // SECWINDOW_H
