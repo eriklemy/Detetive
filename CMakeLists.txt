@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
         secwindow.h
         secwindow.cpp
         secwindow.ui
+        images.qrc
         ${TS_FILES}
 )
 

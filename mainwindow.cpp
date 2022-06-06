@@ -7,10 +7,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/erick/OneDrive/Documentos/RPLM/Detetive/menu.jpeg");
+    QPixmap pix(":/Images/menu.jpeg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-    connect(ui->exitButton, SIGNAL(clicked()), this, SLOT(quit()));
+    connect(ui->exitButton, SIGNAL(clicked()), this, SLOT(close()));
 }
 
 MainWindow::~MainWindow()

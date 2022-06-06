@@ -7,7 +7,7 @@ SecWindow::SecWindow(QWidget *parent) :
     ui(new Ui::SecWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/erick/OneDrive/Documentos/RPLM/Detetive/menu.jpeg");
+    QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 }
