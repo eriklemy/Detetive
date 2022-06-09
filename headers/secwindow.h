@@ -2,7 +2,6 @@
 #define SECWINDOW_H
 
 #include <QMainWindow>
-#include "thirdwindow.h"
 
 namespace Ui {
 class SecWindow;
@@ -21,7 +20,6 @@ private slots:
 
 private:
     Ui::SecWindow *ui;
-    ThirdWindow *thirdWindow;
 };
 
 #endif // SECWINDOW_H

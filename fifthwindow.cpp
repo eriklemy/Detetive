@@ -1,5 +1,5 @@
-#include "fifthwindow.h"
-#include "mainwindow.h"
+#include "headers/mainwindow.h"
+#include "headers/fifthwindow.h"
 #include "ui_fifthwindow.h"
 #include <QPixmap>
 

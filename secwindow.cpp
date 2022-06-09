@@ -1,5 +1,6 @@
-#include "./ui_secwindow.h"
-#include "secwindow.h"
+#include "headers/thirdwindow.h"
+#include "ui_secwindow.h"
+#include "headers/secwindow.h"
 #include <QPixmap>
 
 SecWindow::SecWindow(QWidget *parent) :
@@ -20,7 +21,7 @@ SecWindow::~SecWindow()
 void SecWindow::on_pushButton_clicked()
 {
     hide();
-    thirdWindow = new ThirdWindow(this);
+    ThirdWindow *thirdWindow = new ThirdWindow(this);
     thirdWindow->show();
 }
 

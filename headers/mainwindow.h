@@ -2,8 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "secwindow.h"
-#include <QtMultimedia/QMediaPlayer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,7 +21,5 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QMediaPlayer *music;
-    SecWindow *secWindow;
 };
 #endif // MAINWINDOW_H

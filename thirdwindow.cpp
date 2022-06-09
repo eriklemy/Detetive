@@ -1,6 +1,8 @@
-#include "thirdwindow.h"
-#include "./ui_thirdwindow.h"
-#include "secwindow.h"
+#include "headers/secwindow.h"
+#include "headers/thirdwindow.h"
+#include "headers/forthwindow.h"
+
+#include "ui_thirdwindow.h"
 #include <QPixmap>
 
 ThirdWindow::ThirdWindow(QWidget *parent) :
@@ -17,15 +19,12 @@ ThirdWindow::~ThirdWindow()
     delete ui;
 }
 
-
-
 void ThirdWindow::on_pushContinueButton_clicked()
 {
     hide();
-    forthWindow = new ForthWindow();
+    ForthWindow *forthWindow = new ForthWindow();
     forthWindow->show();
 }
-
 
 void ThirdWindow::on_pushBackButton_clicked()
 {

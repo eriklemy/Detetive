@@ -17,25 +17,25 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 set(TS_FILES Detetive_pt_BR.ts)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-	secwindow.h
-	secwindow.cpp
-	secwindow.ui
-	thirdwindow.cpp
-	thirdwindow.h
-	thirdwindow.ui
-	forthwindow.cpp
-	forthwindow.h
-	forthwindow.ui
-	fifthwindow.cpp
-	fifthwindow.h
-	fifthwindow.ui
-	images.qrc
-	sounds.qrc
-        ${TS_FILES}
+    main.cpp
+    mainwindow.cpp
+    headers/mainwindow.h
+    mainwindow.ui
+    headers/secwindow.h
+    secwindow.cpp
+    secwindow.ui
+    thirdwindow.cpp
+    headers/thirdwindow.h
+    thirdwindow.ui
+    forthwindow.cpp
+    headers/forthwindow.h
+    forthwindow.ui
+    fifthwindow.cpp
+    headers/fifthwindow.h
+    fifthwindow.ui
+    images.qrc
+    sounds.qrc
+    ${TS_FILES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

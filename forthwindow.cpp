@@ -1,6 +1,6 @@
-#include "forthwindow.h"
-#include "fifthwindow.h"
-#include "thirdwindow.h"
+#include "headers/forthwindow.h"
+#include "headers/fifthwindow.h"
+#include "headers/thirdwindow.h"
 #include "ui_forthwindow.h"
 #include <QPixmap>
 

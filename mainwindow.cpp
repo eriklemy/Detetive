@@ -1,5 +1,6 @@
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "headers/mainwindow.h"
+#include "headers/secwindow.h"
+#include "ui_mainwindow.h"
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -23,7 +24,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_playButton_clicked()
 {
     hide();
-    secWindow = new SecWindow(this);
+    SecWindow *secWindow = new SecWindow(this);
     secWindow->show();
 }
 
