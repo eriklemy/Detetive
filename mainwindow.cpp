@@ -7,7 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/menu.jpeg");
+
+    QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
     connect(ui->exitButton, SIGNAL(clicked()), this, SLOT(close()));

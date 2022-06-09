@@ -1,5 +1,5 @@
-#include "secwindow.h"
 #include "./ui_secwindow.h"
+#include "secwindow.h"
 #include <QPixmap>
 
 SecWindow::SecWindow(QWidget *parent) :

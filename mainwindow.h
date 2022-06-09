@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "secwindow.h"
+#include <QtMultimedia/QMediaPlayer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,11 +19,11 @@ public:
 
 private slots:
     void on_playButton_clicked();
-
     void on_exitButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    QMediaPlayer *music;
     SecWindow *secWindow;
 };
 #endif // MAINWINDOW_H

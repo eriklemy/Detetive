@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ThirdWindow</class>
- <widget class="QMainWindow" name="ThirdWindow">
+ <class>FifthWindow</class>
+ <widget class="QMainWindow" name="FifthWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -24,33 +24,20 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushContinueButton">
+   <widget class="QPushButton" name="pushInicioButton">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>450</y>
+      <x>130</x>
+      <y>540</y>
       <width>125</width>
       <height>50</height>
      </rect>
     </property>
     <property name="text">
-     <string>Continue</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushBackButton">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>450</y>
-      <width>125</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Voltar</string>
+     <string>Inicio</string>
     </property>
    </widget>
   </widget>

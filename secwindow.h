@@ -22,7 +22,6 @@ private slots:
 private:
     Ui::SecWindow *ui;
     ThirdWindow *thirdWindow;
-
 };
 
 #endif // SECWINDOW_H

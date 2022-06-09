@@ -21,13 +21,20 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        secwindow.h
-        secwindow.cpp
-        secwindow.ui
-        thirdwindow.cpp
-        thirdwindow.h
-        thirdwindow.ui
-        images.qrc
+	secwindow.h
+	secwindow.cpp
+	secwindow.ui
+	thirdwindow.cpp
+	thirdwindow.h
+	thirdwindow.ui
+	forthwindow.cpp
+	forthwindow.h
+	forthwindow.ui
+	fifthwindow.cpp
+	fifthwindow.h
+	fifthwindow.ui
+	images.qrc
+	sounds.qrc
         ${TS_FILES}
 )
 
