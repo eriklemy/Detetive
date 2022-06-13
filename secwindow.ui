@@ -68,17 +68,17 @@ p, li { white-space: pre-wrap; }
     </property>
     <item>
      <property name="text">
-      <string>A</string>
+      <string>Dragão Traido</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>B</string>
+      <string>Existe um culpado</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>C</string>
+      <string>É vendedor de arte</string>
      </property>
     </item>
    </widget>
