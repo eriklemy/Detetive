@@ -3,7 +3,7 @@
 #include "headers/mainwindow.h"
 #include "headers/secwindow.h"
 
-#include "ui_thirdwindow.h"
+#include "ui/ui_thirdwindow.h"
 #include <QPixmap>
 #include <QMessageBox>
 

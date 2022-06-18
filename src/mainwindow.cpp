@@ -1,6 +1,6 @@
 #include "headers/mainwindow.h"
 #include "headers/secwindow.h"
-#include "ui_mainwindow.h"
+#include "ui/ui_mainwindow.h"
 #include <QPixmap>
 
 MainWindow::MainWindow(QWidget *parent)

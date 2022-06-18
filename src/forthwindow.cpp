@@ -1,7 +1,7 @@
 #include "headers/forthwindow.h"
 #include "headers/fifthwindow.h"
 #include "headers/thirdwindow.h"
-#include "ui_forthwindow.h"
+#include "ui/ui_forthwindow.h"
 #include <QPixmap>
 
 ForthWindow::ForthWindow(QWidget *parent) :

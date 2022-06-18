@@ -1,7 +1,7 @@
 #include "headers/eleventhwindow.h"
 #include "headers/tenthwindow.h"
 #include "headers/twelfthwindow.h"
-#include "ui_eleventhwindow.h"
+#include "ui/ui_eleventhwindow.h"
 #include <QPixmap>
 
 EleventhWindow::EleventhWindow(QWidget *parent) :

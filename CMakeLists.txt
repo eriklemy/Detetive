@@ -18,51 +18,51 @@ set(TS_FILES Detetive_pt_BR.ts)
 
 set(PROJECT_SOURCES
     main.cpp
-    mainwindow.cpp
+    src/mainwindow.cpp
     headers/mainwindow.h
-    mainwindow.ui
+    ui/mainwindow.ui
     headers/secwindow.h
-    secwindow.cpp
-    secwindow.ui
-    thirdwindow.cpp
+    src/secwindow.cpp
+    ui/secwindow.ui
+    src/thirdwindow.cpp
     headers/thirdwindow.h
-    thirdwindow.ui
-    forthwindow.cpp
+    ui/thirdwindow.ui
+    src/forthwindow.cpp
     headers/forthwindow.h
-    forthwindow.ui
-    fifthwindow.cpp
+    ui/forthwindow.ui
+    src/fifthwindow.cpp
     headers/fifthwindow.h
-    fifthwindow.ui
-    sixthwindow.cpp
+    ui/fifthwindow.ui
+    src/sixthwindow.cpp
     headers/sixthwindow.h
-    sixthwindow.ui
-    seventhwindow.cpp
+    ui/sixthwindow.ui
+    src/seventhwindow.cpp
     headers/seventhwindow.h
-    seventhwindow.ui
-    eighthwindow.cpp
+    ui/seventhwindow.ui
+    src/eighthwindow.cpp
     headers/eighthwindow.h
-    eighthwindow.ui
-    ninthwindow.cpp
+    ui/eighthwindow.ui
+    src/ninthwindow.cpp
     headers/ninthwindow.h
-    ninthwindow.ui
-    tenthwindow.cpp
+    ui/ninthwindow.ui
+    src/tenthwindow.cpp
     headers/tenthwindow.h
-    tenthwindow.ui
-    eleventhwindow.cpp
+    ui/tenthwindow.ui
+    src/eleventhwindow.cpp
     headers/eleventhwindow.h
-    eleventhwindow.ui
-    twelfthwindow.cpp
+    ui/eleventhwindow.ui
+    src/twelfthwindow.cpp
     headers/twelfthwindow.h
-    twelfthwindow.ui
-    thirteenthwindow.cpp
+    ui/twelfthwindow.ui
+    src/thirteenthwindow.cpp
     headers/thirteenthwindow.h
-    thirteenthwindow.ui
-    fourteenthwindow.cpp
+    ui/thirteenthwindow.ui
+    src/fourteenthwindow.cpp
     headers/fourteenthwindow.h
-    fourteenthwindow.ui
-    fifteenthwindow.cpp
+    ui/fourteenthwindow.ui
+    src/fifteenthwindow.cpp
     headers/fifteenthwindow.h
-    fifteenthwindow.ui
+    ui/fifteenthwindow.ui
     images.qrc
     ${TS_FILES}
 )

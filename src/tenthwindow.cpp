@@ -1,7 +1,7 @@
 #include "headers/tenthwindow.h"
 #include "headers/eleventhwindow.h"
 #include "headers/ninthwindow.h"
-#include "ui_tenthwindow.h"
+#include "ui/ui_tenthwindow.h"
 #include <QPixmap>
 
 TenthWindow::TenthWindow(QWidget *parent) :

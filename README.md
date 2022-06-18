@@ -22,7 +22,7 @@ Com o Qt instalado:
     2. Alterar de "Detetiva-main" para "Detetive"
     3. Abrir Qt Creator 7.0.2 (community)
     4. Ir em Tools > Options > Debug & Run > Alterar o Diretorio para "Current Directory" e dar APPLY
-    5. Ir em "Open File or Project" procurar a pasta "Detetive" e selecionar o arquivo "CMakeList"
+    5. Ir em "Open File or Project" procurar a pasta "Detetive" e selecionar o arquivo "CMakeList.txt"
     6. Buildar e Rodar
 </pre>
 

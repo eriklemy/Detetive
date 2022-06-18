@@ -2,7 +2,7 @@
 #include "headers/mainwindow.h"
 #include "headers/fifthwindow.h"
 #include "headers/sixthwindow.h"
-#include "ui_fifthwindow.h"
+#include "ui/ui_fifthwindow.h"
 #include <QPixmap>
 
 FifthWindow::FifthWindow(QWidget *parent) :

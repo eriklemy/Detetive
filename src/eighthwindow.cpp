@@ -1,7 +1,7 @@
 #include "headers/eighthwindow.h"
 #include "headers/sixthwindow.h"
 #include "headers/ninthwindow.h"
-#include "ui_eighthwindow.h"
+#include "ui/ui_eighthwindow.h"
 #include <QPixmap>
 
 EighthWindow::EighthWindow(QWidget *parent) :

@@ -1,7 +1,7 @@
 #include "headers/seventhwindow.h"
 #include "headers/eighthwindow.h"
 #include "headers/sixthwindow.h"
-#include "ui_seventhwindow.h"
+#include "ui/ui_seventhwindow.h"
 #include <QPixmap>
 #include <QMessageBox>
 

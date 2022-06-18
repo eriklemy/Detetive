@@ -1,7 +1,7 @@
 #include "headers/sixthwindow.h"
 #include "headers/fifthwindow.h"
 #include "headers/seventhwindow.h"
-#include "ui_sixthwindow.h"
+#include "ui/ui_sixthwindow.h"
 #include <QPixmap>
 
 SixthWindow::SixthWindow(QWidget *parent) :
