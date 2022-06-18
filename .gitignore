@@ -5,13 +5,12 @@ gmon.out
 *.stats
 Thumbs.db
 .DS_Store
-SDL_test
 
 # VS Code
 .vscode
 
 # Project specific
-SDL_test
+/SDL_test
 
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
