@@ -1,24 +1,24 @@
-#include "headers/fourteenthwindow.h"
+#include "headers/fifteenthwindow.h"
 #include "headers/mainwindow.h"
 #include "headers/twelfthwindow.h"
-#include "ui_fourteenthwindow.h"
+#include "ui_fifteenthwindow.h"
 #include <QPixmap>
 
-FourteenthWindow::FourteenthWindow(QWidget *parent) :
+FifteenthWindow::FifteenthWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::FourteenthWindow)
+    ui(new Ui::FifteenthWindow)
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
 }
 
-FourteenthWindow::~FourteenthWindow()
+FifteenthWindow::~FifteenthWindow()
 {
     delete ui;
 }
 
-void FourteenthWindow::on_pushBackButton_clicked()
+void FifteenthWindow::on_pushBackButton_clicked()
 {
     hide();
     TwelfthWindow *twelfthWindow = new TwelfthWindow(this);
@@ -26,7 +26,7 @@ void FourteenthWindow::on_pushBackButton_clicked()
 }
 
 
-void FourteenthWindow::on_pushContinueButton_clicked()
+void FifteenthWindow::on_pushContinueButton_clicked()
 {
     hide();
     MainWindow *mainWindow = new MainWindow(this);

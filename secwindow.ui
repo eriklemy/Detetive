@@ -158,7 +158,7 @@ p, li { white-space: pre-wrap; }
      <string>Inicio</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_2">
+   <widget class="QComboBox" name="comboBox_suspeitos">
     <property name="geometry">
      <rect>
       <x>820</x>
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
    <zorder>pushContinueButton</zorder>
    <zorder>comboBox</zorder>
    <zorder>pushInicioButton</zorder>
-   <zorder>comboBox_2</zorder>
+   <zorder>comboBox_suspeitos</zorder>
    <zorder>textSus</zorder>
    <zorder>textLugar</zorder>
   </widget>

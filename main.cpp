@@ -1,8 +1,9 @@
 #include "headers/mainwindow.h"
-
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
+
+void getScreens(qint16 screenChose);
 
 int main(int argc, char *argv[])
 {

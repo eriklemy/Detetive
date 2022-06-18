@@ -2,6 +2,7 @@
 #define THIRDWINDOW_H
 
 #include <QMainWindow>
+#include <headers/secwindow.h>
 
 namespace Ui {
 class ThirdWindow;
@@ -17,10 +18,13 @@ public:
 
 private slots:
     void on_pushContinueButton_clicked();
+    void on_pushInicioButton_clicked();
     void on_pushBackButton_clicked();
+    void on_comboBox_activated(int index);
 
 private:
     Ui::ThirdWindow *ui;
+    SecWindow *secWindow = new SecWindow();
 };
 
 #endif // THIRDWINDOW_H

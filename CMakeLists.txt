@@ -57,6 +57,12 @@ set(PROJECT_SOURCES
     thirteenthwindow.cpp
     headers/thirteenthwindow.h
     thirteenthwindow.ui
+    fourteenthwindow.cpp
+    headers/fourteenthwindow.h
+    fourteenthwindow.ui
+    fifteenthwindow.cpp
+    headers/fifteenthwindow.h
+    fifteenthwindow.ui
     images.qrc
     ${TS_FILES}
 )

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>FourteenthWindow</class>
- <widget class="QMainWindow" name="FourteenthWindow">
+ <class>FifteenthWindow</class>
+ <widget class="QMainWindow" name="FifteenthWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="pushBackButton">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>460</y>
+      <x>430</x>
+      <y>430</y>
       <width>125</width>
       <height>50</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>460</y>
+      <x>560</x>
+      <y>430</y>
       <width>125</width>
       <height>50</height>
      </rect>

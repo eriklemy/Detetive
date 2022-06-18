@@ -15,7 +15,10 @@ class SecWindow : public QMainWindow
 public:
     explicit SecWindow(QWidget *parent = nullptr);
     ~SecWindow();
+    void getScreen();
     QStringList list;
+    qint16 day = 0;
+    qint16 screenChose = -1;
 
 private slots:
     void on_pushContinueButton_clicked();
@@ -24,7 +27,7 @@ private slots:
 
 private:
     Ui::SecWindow *ui;
-    int prop;
+
 };
 
 #endif // SECWINDOW_H

@@ -1,6 +1,7 @@
-#include "headers/secwindow.h"
 #include "headers/thirdwindow.h"
 #include "headers/forthwindow.h"
+#include "headers/mainwindow.h"
+#include "headers/secwindow.h"
 
 #include "ui_thirdwindow.h"
 #include <QPixmap>
@@ -14,11 +15,11 @@ ThirdWindow::ThirdWindow(QWidget *parent) :
     QPixmap pix(":/Images/wolf.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
     ui->textSus->viewport()->setAutoFillBackground(false);
+    ui->textLugar->viewport()->setAutoFillBackground(false);
 
-    SecWindow *secWindow = new SecWindow();
-
-    secWindow->list.replace(0, "suspeito 1");
-    ui->comboBox->addItems(secWindow->list);
+    secWindow->day++;
+    secWindow->list.append("suspeito 1");
+    ui->comboBox_sus->addItems(secWindow->list);
 }
 
 ThirdWindow::~ThirdWindow()
@@ -28,15 +29,28 @@ ThirdWindow::~ThirdWindow()
 
 void ThirdWindow::on_pushContinueButton_clicked()
 {
-    hide();
-    ForthWindow *forthWindow = new ForthWindow();
-    forthWindow->show();
+    if(secWindow->day <= 7)
+    {
+        hide();
+        secWindow->getScreen();
+    }
+    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }
 
 void ThirdWindow::on_pushBackButton_clicked()
 {
     hide();
-    SecWindow *secWindow = new SecWindow(this);
     secWindow->show();
 }
 
+void ThirdWindow::on_pushInicioButton_clicked()
+{
+    hide();
+    MainWindow *mainWindow = new MainWindow(this);
+    mainWindow->show();
+}
+
+void ThirdWindow::on_comboBox_activated(int index)
+{
+   secWindow->screenChose = index + 1;
+}
