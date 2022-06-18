@@ -3,8 +3,6 @@
 #include <QLocale>
 #include <QTranslator>
 
-void getScreens(qint16 screenChose);
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

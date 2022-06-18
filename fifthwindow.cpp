@@ -11,7 +11,7 @@ FifthWindow::FifthWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/wallpaper1.jpeg");
-    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
+    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
 }
 
 FifthWindow::~FifthWindow()

@@ -10,7 +10,7 @@ FifteenthWindow::FifteenthWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
-    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
+    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
 }
 
 FifteenthWindow::~FifteenthWindow()

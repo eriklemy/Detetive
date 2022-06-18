@@ -13,7 +13,7 @@ ThirdWindow::ThirdWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/wolf.jpg");
-    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
+    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
 
