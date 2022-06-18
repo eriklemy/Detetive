@@ -1,9 +1,34 @@
+# Detetive
+Este repositório contém o trabalho prático 2 de programação, desenvolvidos durante o primeiro semestre de 2022:
+
 - trabalho pratico 1: Tabela da Verdade 
-    - O trabalho foi desenvolvido em C++.
-    
+    - O trabalho foi desenvolvido em C++ com uso do framework Qt para criação de interface grafica
+
 O  objetivo desse trabalho é desenvolver um jogo de detetive no qual você vai utilizar regras 
 de inferência para deduzir a conclusão. 
 
+
+## Compilação e Execução
+- Necessario GCC instalado ou framework de terceiros como MSVS, MinGW
+### Melhor metodo para execução
+- Instalar Qt - [Baixar instalador aqui](https://www.qt.io/download-open-source?hsCtaTracking=9f6a2170-a938-42df-a8e2-a9f0b1d6cdce%7C6cb0de4f-9bb5-4778-ab02-bfb62735f3e5)
+Apos download do instalador, inicia-lo e: 
+<pre>
+    1. Criar conta no Qt
+    2. Escolher o path de instalação
+    3. Fazer download da versão para aplicativos de computador 
+</pre>
+Com o Qt instalado:
+<pre>
+    1. Clonar este repositorio e extrai-lo (se necessario)
+    2. Alterar de "Detetiva-main" para "Detetive"
+    3. Abrir Qt Creator 7.0.2 (community)
+    4. Ir em Tools > Options > Debug & Run > Alterar o Diretorio para "Current Directory" e dar APPLY
+    5. Ir em "Open File or Project" procurar a pasta "Detetive" e selecionar o arquivo "CMakeList"
+    6. Buildar e Rodar
+</pre>
+
+__Obs__: Caso de erro no build final, seguir a instrução e selecionar o compilador que for recomendado pelo Qt
 
 ### HISTORIA EM CONSTRUÇÃO
 ---
