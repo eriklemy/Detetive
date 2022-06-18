@@ -2,6 +2,7 @@
 #define SECWINDOW_H
 
 #include <QMainWindow>
+#include <QStringList>
 
 namespace Ui {
 class SecWindow;
@@ -14,9 +15,11 @@ class SecWindow : public QMainWindow
 public:
     explicit SecWindow(QWidget *parent = nullptr);
     ~SecWindow();
+    QStringList list;
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pushContinueButton_clicked();
+    void on_pushInicioButton_clicked();
     void on_comboBox_activated(int index);
 
 private:

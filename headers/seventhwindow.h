@@ -15,6 +15,10 @@ public:
     explicit SeventhWindow(QWidget *parent = nullptr);
     ~SeventhWindow();
 
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
+
 private:
     Ui::SeventhWindow *ui;
 };

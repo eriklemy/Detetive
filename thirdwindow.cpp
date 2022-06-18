@@ -4,6 +4,7 @@
 
 #include "ui_thirdwindow.h"
 #include <QPixmap>
+#include <QMessageBox>
 
 ThirdWindow::ThirdWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,6 +13,12 @@ ThirdWindow::ThirdWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/wolf.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
+    ui->textSus->viewport()->setAutoFillBackground(false);
+
+    SecWindow *secWindow = new SecWindow();
+
+    secWindow->list.replace(0, "suspeito 1");
+    ui->comboBox->addItems(secWindow->list);
 }
 
 ThirdWindow::~ThirdWindow()

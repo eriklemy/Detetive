@@ -1,6 +1,7 @@
 #include "headers/forthwindow.h"
 #include "headers/mainwindow.h"
 #include "headers/fifthwindow.h"
+#include "headers/sixthwindow.h"
 #include "ui_fifthwindow.h"
 #include <QPixmap>
 
@@ -29,7 +30,7 @@ void FifthWindow::on_pushBackButton_clicked()
 void FifthWindow::on_pushContinueButton_clicked()
 {
     hide();
-    SixthWindow *sixthWindow = new SisthWindow(this);
+    SixthWindow *sixthWindow = new SixthWindow(this);
     sixthWindow->show();
 }
 

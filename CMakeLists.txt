@@ -36,37 +36,28 @@ set(PROJECT_SOURCES
     sixthwindow.cpp
     headers/sixthwindow.h
     sixthwindow.ui
-
     seventhwindow.cpp
     headers/seventhwindow.h
     seventhwindow.ui
-
     eighthwindow.cpp
     headers/eighthwindow.h
     eighthwindow.ui
-
     ninthwindow.cpp
     headers/ninthwindow.h
     ninthwindow.ui
-
     tenthwindow.cpp
     headers/tenthwindow.h
     tenthwindow.ui
-
     eleventhwindow.cpp
     headers/eleventhwindow.h
     eleventhwindow.ui
-
     twelfthwindow.cpp
     headers/twelfthwindow.h
     twelfthwindow.ui
-    
     thirteenthwindow.cpp
     headers/thirteenthwindow.h
     thirteenthwindow.ui
-
     images.qrc
-    sounds.qrc
     ${TS_FILES}
 )
 

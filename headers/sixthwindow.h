@@ -4,19 +4,23 @@
 #include <QMainWindow>
 
 namespace Ui {
-class sixthWindow;
+class SixthWindow;
 }
 
-class sixthWindow : public QMainWindow
+class SixthWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit sixthWindow(QWidget *parent = nullptr);
-    ~sixthWindow();
+    explicit SixthWindow(QWidget *parent = nullptr);
+    ~SixthWindow();
+
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
 
 private:
-    Ui::sixthWindow *ui;
+    Ui::SixthWindow *ui;
 };
 
 #endif // SIXTHWINDOW_H

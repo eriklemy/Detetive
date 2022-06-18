@@ -15,6 +15,10 @@ public:
     explicit ThirteenthWindow(QWidget *parent = nullptr);
     ~ThirteenthWindow();
 
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
+
 private:
     Ui::ThirteenthWindow *ui;
 };

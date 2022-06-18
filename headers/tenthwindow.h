@@ -15,6 +15,10 @@ public:
     explicit TenthWindow(QWidget *parent = nullptr);
     ~TenthWindow();
 
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
+
 private:
     Ui::TenthWindow *ui;
 };

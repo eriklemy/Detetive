@@ -30,14 +30,40 @@
    <widget class="QPushButton" name="pushInicioButton">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>540</y>
+      <x>270</x>
+      <y>490</y>
       <width>125</width>
       <height>50</height>
      </rect>
     </property>
     <property name="text">
      <string>Inicio</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushContinueButton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>490</y>
+      <width>125</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Continue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushBackButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>490</y>
+      <width>125</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Voltar</string>
     </property>
    </widget>
   </widget>

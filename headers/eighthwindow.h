@@ -15,6 +15,10 @@ public:
     explicit EighthWindow(QWidget *parent = nullptr);
     ~EighthWindow();
 
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
+
 private:
     Ui::EighthWindow *ui;
 };

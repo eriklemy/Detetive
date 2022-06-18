@@ -15,6 +15,10 @@ public:
     explicit TwelfthWindow(QWidget *parent = nullptr);
     ~TwelfthWindow();
 
+private slots:
+    void on_pushBackButton_clicked();
+    void on_pushContinueButton_clicked();
+
 private:
     Ui::TwelfthWindow *ui;
 };

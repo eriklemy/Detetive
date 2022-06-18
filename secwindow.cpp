@@ -12,7 +12,16 @@ SecWindow::SecWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatio));
+
     ui->textBrowser->viewport()->setAutoFillBackground(false);
+    ui->textSus->viewport()->setAutoFillBackground(false);
+    ui->textLugar->viewport()->setAutoFillBackground(false);
+
+    list.append("None Yet");
+    list.append("None Yet teste");
+
+    for(int i = 0; i < list.size(); i++) ui->comboBox_2->addItem(list.at(i));
+
 }
 
 SecWindow::~SecWindow()
@@ -20,13 +29,19 @@ SecWindow::~SecWindow()
     delete ui;
 }
 
-void SecWindow::on_pushButton_clicked()
+void SecWindow::on_pushContinueButton_clicked()
 {
     hide();
     ThirdWindow *thirdWindow = new ThirdWindow(this);
     thirdWindow->show();
 }
 
+void SecWindow::on_pushInicioButton_clicked()
+{
+    hide();
+    MainWindow *mainWindow = new MainWindow(this);
+    mainWindow->show();
+}
 
 void SecWindow::on_comboBox_activated(int index)
 {
@@ -50,4 +65,7 @@ void SecWindow::on_comboBox_activated(int index)
     }
 
 }
+
+
+
 
