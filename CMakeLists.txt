@@ -18,52 +18,51 @@ set(TS_FILES Detetive_pt_BR.ts)
 
 set(PROJECT_SOURCES
     main.cpp
-    src/mainwindow.cpp
-    headers/mainwindow.h
-    ui/mainwindow.ui
-    headers/secwindow.h
-    src/secwindow.cpp
-    ui/secwindow.ui
-    src/thirdwindow.cpp
-    headers/thirdwindow.h
-    ui/thirdwindow.ui
-    src/forthwindow.cpp
-    headers/forthwindow.h
-    ui/forthwindow.ui
-    src/fifthwindow.cpp
-    headers/fifthwindow.h
-    ui/fifthwindow.ui
-    src/sixthwindow.cpp
-    headers/sixthwindow.h
-    ui/sixthwindow.ui
-    src/seventhwindow.cpp
-    headers/seventhwindow.h
-    ui/seventhwindow.ui
-    src/eighthwindow.cpp
-    headers/eighthwindow.h
-    ui/eighthwindow.ui
-    src/ninthwindow.cpp
-    headers/ninthwindow.h
-    ui/ninthwindow.ui
-    src/tenthwindow.cpp
-    headers/tenthwindow.h
-    ui/tenthwindow.ui
-    src/eleventhwindow.cpp
-    headers/eleventhwindow.h
-    ui/eleventhwindow.ui
-    src/twelfthwindow.cpp
-    headers/twelfthwindow.h
-    ui/twelfthwindow.ui
-    src/thirteenthwindow.cpp
-    headers/thirteenthwindow.h
-    ui/thirteenthwindow.ui
-    src/fourteenthwindow.cpp
-    headers/fourteenthwindow.h
-    ui/fourteenthwindow.ui
-    src/fifteenthwindow.cpp
-    headers/fifteenthwindow.h
-    ui/fifteenthwindow.ui
-    images.qrc
+    ./mainwindow.cpp
+    ./headers/mainwindow.h
+    ./ui/mainwindow.ui
+    ./headers/secwindow.h
+    ./secwindow.cpp
+    ./ui/secwindow.ui
+    ./thirdwindow.cpp
+    ./headers/thirdwindow.h
+    ./ui/thirdwindow.ui
+    ./forthwindow.cpp
+    ./headers/forthwindow.h
+    ./ui/forthwindow.ui
+    ./fifthwindow.cpp
+    ./headers/fifthwindow.h
+    ./ui/fifthwindow.ui
+    ./sixthwindow.cpp
+    ./headers/sixthwindow.h
+    ./ui/sixthwindow.ui
+    ./seventhwindow.cpp
+    ./headers/seventhwindow.h
+    ./ui/seventhwindow.ui
+    ./eighthwindow.cpp
+    ./headers/eighthwindow.h
+    ./ui/eighthwindow.ui
+    ./ninthwindow.cpp
+    ./headers/ninthwindow.h
+    ./ui/ninthwindow.ui
+    ./tenthwindow.cpp
+    ./headers/tenthwindow.h
+    ./ui/tenthwindow.ui
+    ./eleventhwindow.cpp
+    ./headers/eleventhwindow.h
+    ./ui/eleventhwindow.ui
+    ./twelfthwindow.cpp
+    ./headers/twelfthwindow.h
+    ./ui/twelfthwindow.ui
+    ./thirteenthwindow.cpp
+    ./headers/thirteenthwindow.h
+    ./ui/thirteenthwindow.ui
+    ./fourteenthwindow.cpp
+    ./headers/fourteenthwindow.h
+    ./ui/fourteenthwindow.ui
+    ./fifteenthwindow.cpp
+    ./headers/fifteenthwindow.h
+    ./ui/fifteenthwindow.ui./src/    images.qrc
     ${TS_FILES}
 )
 
@@ -86,7 +85,7 @@ else()
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(Detetive
+	add_executable(Detetive
             ${PROJECT_SOURCES}
         )
     endif()

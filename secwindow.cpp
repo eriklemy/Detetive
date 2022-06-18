@@ -14,6 +14,7 @@
 #include "headers/fifteenthwindow.h"
 
 #include "headers/secwindow.h"
+
 #include "ui/ui_secwindow.h"
 #include <QPixmap>
 #include <QMessageBox>

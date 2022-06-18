@@ -1,8 +1,10 @@
 #include "headers/ninthwindow.h"
 #include "headers/eighthwindow.h"
 #include "headers/tenthwindow.h"
+
 #include "ui/ui_ninthwindow.h"
 #include <QPixmap>
+#include <QMessageBox>
 
 NinthWindow::NinthWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,6 +13,13 @@ NinthWindow::NinthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/j4uakmaghau61.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
+
+    ui->textSus->viewport()->setAutoFillBackground(false);
+    ui->textLugar->viewport()->setAutoFillBackground(false);
+
+    secWindow->day++;
+    secWindow->list.append("suspeito 7");
+    ui->comboBox_sus->addItems(secWindow->list);
 }
 
 NinthWindow::~NinthWindow()
@@ -28,8 +37,11 @@ void NinthWindow::on_pushBackButton_clicked()
 
 void NinthWindow::on_pushContinueButton_clicked()
 {
-    hide();
-    TenthWindow *tenthWindow = new TenthWindow(this);
-    tenthWindow->show();
+    if(secWindow->day <= 7)
+    {
+        hide();
+        secWindow->getScreen();
+    }
+    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }
 

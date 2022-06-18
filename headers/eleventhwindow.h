@@ -1,6 +1,7 @@
 #ifndef ELEVENTHWINDOW_H
 #define ELEVENTHWINDOW_H
 
+#include "headers/secwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -18,9 +19,12 @@ public:
 private slots:
     void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
+    void on_pushInicioButton_clicked();
+
 
 private:
     Ui::EleventhWindow *ui;
+    SecWindow *secWindow = new SecWindow();
 };
 
 #endif // ELEVENTHWINDOW_H

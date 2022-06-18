@@ -1,8 +1,10 @@
 #include "headers/sixthwindow.h"
 #include "headers/fifthwindow.h"
-#include "headers/seventhwindow.h"
+#include "headers/mainwindow.h"
+
 #include "ui/ui_sixthwindow.h"
 #include <QPixmap>
+#include <QMessageBox>
 
 SixthWindow::SixthWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,6 +13,13 @@ SixthWindow::SixthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
+
+    ui->textSus->viewport()->setAutoFillBackground(false);
+    ui->textLugar->viewport()->setAutoFillBackground(false);
+
+    secWindow->day++;
+    secWindow->list.append("suspeito 4");
+    ui->comboBox_sus->addItems(secWindow->list);
 }
 
 SixthWindow::~SixthWindow()
@@ -28,8 +37,18 @@ void SixthWindow::on_pushBackButton_clicked()
 
 void SixthWindow::on_pushContinueButton_clicked()
 {
+    if(secWindow->day <= 7)
+    {
+        hide();
+        secWindow->getScreen();
+    }
+    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
+}
+
+void SixthWindow::on_pushInicioButton_clicked()
+{
     hide();
-    SeventhWindow *seventhWindow = new SeventhWindow(this);
-    seventhWindow->show();
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
 }
 

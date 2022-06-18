@@ -1,6 +1,7 @@
 #ifndef FIFTHWINDOW_H
 #define FIFTHWINDOW_H
 
+#include "headers/secwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -22,6 +23,8 @@ private slots:
 
 private:
     Ui::FifthWindow *ui;
+    SecWindow *secWindow = new SecWindow();
+
 };
 
 #endif // FIFTHWINDOW_H
