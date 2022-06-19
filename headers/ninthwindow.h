@@ -16,7 +16,6 @@ public:
     explicit NinthWindow(QWidget *parent = nullptr);
     ~NinthWindow();
 private slots:
-    void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
 
 private:

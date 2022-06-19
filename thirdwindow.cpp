@@ -1,8 +1,5 @@
 #include "headers/thirdwindow.h"
 
-#include "headers/mainwindow.h"
-#include "headers/secwindow.h"
-
 #include "ui/ui_thirdwindow.h"
 #include <QPixmap>
 #include <QMessageBox>
@@ -27,12 +24,5 @@ void ThirdWindow::on_pushContinueButton_clicked()
     this->hide();
     path = new PathWindow(this);
     path->show();
-}
-
-void ThirdWindow::on_pushBackButton_clicked()
-{
-    hide();
-    SecWindow *secWindow = new SecWindow(this);
-    secWindow->show();
 }
 

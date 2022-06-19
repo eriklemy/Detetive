@@ -1,6 +1,4 @@
 #include "headers/twelfthwindow.h"
-#include "headers/eleventhwindow.h"
-#include "headers/mainwindow.h"
 
 #include "ui/ui_twelfthwindow.h"
 #include <QPixmap>
@@ -24,14 +22,6 @@ TwelfthWindow::~TwelfthWindow()
 {
     delete ui;
 }
-
-void TwelfthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    EleventhWindow *eleventhWindow = new EleventhWindow(this);
-    eleventhWindow->show();
-}
-
 
 void TwelfthWindow::on_pushContinueButton_clicked()
 {

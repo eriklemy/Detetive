@@ -1,5 +1,4 @@
 #include "headers/sixthwindow.h"
-#include "headers/fifthwindow.h"
 
 #include "ui/ui_sixthwindow.h"
 #include <QPixmap>
@@ -23,13 +22,6 @@ SixthWindow::SixthWindow(QWidget *parent) :
 SixthWindow::~SixthWindow()
 {
     delete ui;
-}
-
-void SixthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    FifthWindow *fifthWindow = new FifthWindow(this);
-    fifthWindow->show();
 }
 
 void SixthWindow::on_pushContinueButton_clicked()

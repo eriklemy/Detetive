@@ -18,7 +18,6 @@ public:
 
 private slots:
     void on_pushContinueButton_clicked();
-    void on_pushBackButton_clicked();
 
 private:
     Ui::FifteenthWindow *ui;

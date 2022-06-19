@@ -17,7 +17,6 @@ public:
     ~ThirteenthWindow();
 
 private slots:
-    void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
 
 private:

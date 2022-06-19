@@ -1,6 +1,4 @@
 #include "headers/ninthwindow.h"
-#include "headers/eighthwindow.h"
-#include "headers/tenthwindow.h"
 
 #include "ui/ui_ninthwindow.h"
 #include <QPixmap>
@@ -13,10 +11,9 @@ NinthWindow::NinthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/j4uakmaghau61.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
-
     ui->textSus->viewport()->setAutoFillBackground(false);
-    path = new PathWindow(this);
 
+    path = new PathWindow(this);
     ui->comboBox_sus->addItems(path->listOfSuspects);
     path->hour++;
 }
@@ -25,14 +22,6 @@ NinthWindow::~NinthWindow()
 {
     delete ui;
 }
-
-void NinthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    EighthWindow *eighthWindow = new EighthWindow(this);
-    eighthWindow->show();
-}
-
 
 void NinthWindow::on_pushContinueButton_clicked()
 {

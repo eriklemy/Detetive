@@ -29,9 +29,5 @@ void MainWindow::on_playButton_clicked()
     secWindow->show();
 }
 
-
-void MainWindow::on_exitButton_clicked()
-{
-
-}
+void MainWindow::on_exitButton_clicked(){}
 

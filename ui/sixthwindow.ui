@@ -81,27 +81,14 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>440</y>
+      <x>670</x>
+      <y>470</y>
       <width>105</width>
       <height>35</height>
      </rect>
     </property>
     <property name="text">
-     <string>Continue</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushBackButton">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>480</y>
-      <width>105</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Voltar</string>
+     <string>Lugares</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
@@ -130,12 +117,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <zorder>label</zorder>
-   <zorder>pushBackButton</zorder>
-   <zorder>comboBox_sus</zorder>
-   <zorder>textSus</zorder>
-   <zorder>pushContinueButton</zorder>
-   <zorder>textBrowser</zorder>
   </widget>
  </widget>
  <resources/>

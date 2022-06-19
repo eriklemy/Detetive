@@ -26,20 +26,11 @@ EleventhWindow::~EleventhWindow()
     delete ui;
 }
 
-void EleventhWindow::on_pushBackButton_clicked()
-{
-    hide();
-    TenthWindow *tenthWindow = new TenthWindow(this);
-    tenthWindow->show();
-}
-
-
 void EleventhWindow::on_pushContinueButton_clicked()
 {
     if(path->hour < 7)
     {
         hide();
-        path = new PathWindow(this);
         path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);

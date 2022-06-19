@@ -1,6 +1,4 @@
 #include "headers/tenthwindow.h"
-#include "headers/mainwindow.h"
-#include "headers/ninthwindow.h"
 
 #include "ui/ui_tenthwindow.h"
 #include <QPixmap>
@@ -24,14 +22,6 @@ TenthWindow::~TenthWindow()
 {
     delete ui;
 }
-
-void TenthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    NinthWindow *ninthWindow = new NinthWindow(this);
-    ninthWindow->show();
-}
-
 
 void TenthWindow::on_pushContinueButton_clicked()
 {

@@ -36,19 +36,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushBackButton">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>490</y>
-      <width>105</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Voltar</string>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="textSus">
     <property name="geometry">
      <rect>
@@ -75,14 +62,14 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>450</y>
+      <x>660</x>
+      <y>480</y>
       <width>105</width>
       <height>35</height>
      </rect>
     </property>
     <property name="text">
-     <string>Continue</string>
+     <string>Lugares</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -132,7 +119,6 @@ p, li { white-space: pre-wrap; }
    </widget>
    <zorder>label</zorder>
    <zorder>textBrowser</zorder>
-   <zorder>pushBackButton</zorder>
    <zorder>comboBox_sus</zorder>
    <zorder>textSus</zorder>
    <zorder>pushContinueButton</zorder>

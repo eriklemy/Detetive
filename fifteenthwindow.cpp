@@ -1,6 +1,4 @@
 #include "headers/fifteenthwindow.h"
-#include "headers/mainwindow.h"
-#include "headers/twelfthwindow.h"
 
 #include "ui/ui_fifteenthwindow.h"
 #include <QPixmap>
@@ -13,10 +11,9 @@ FifteenthWindow::FifteenthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
-
     ui->textSus->viewport()->setAutoFillBackground(false);
-    path = new PathWindow(this);
 
+    path = new PathWindow(this);
     ui->comboBox_sus->addItems(path->listOfSuspects);
     path->hour++;
 }
@@ -24,13 +21,6 @@ FifteenthWindow::FifteenthWindow(QWidget *parent) :
 FifteenthWindow::~FifteenthWindow()
 {
     delete ui;
-}
-
-void FifteenthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    TwelfthWindow *twelfthWindow = new TwelfthWindow(this);
-    twelfthWindow->show();
 }
 
 void FifteenthWindow::on_pushContinueButton_clicked()

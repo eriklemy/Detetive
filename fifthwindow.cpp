@@ -1,5 +1,3 @@
-#include "headers/forthwindow.h"
-#include "headers/mainwindow.h"
 #include "headers/fifthwindow.h"
 
 #include "ui/ui_fifthwindow.h"
@@ -25,14 +23,6 @@ FifthWindow::~FifthWindow()
 {
     delete ui;
 }
-
-void FifthWindow::on_pushBackButton_clicked()
-{
-    hide();
-    ForthWindow *forthWindow = new ForthWindow(this);
-    forthWindow->show();
-}
-
 
 void FifthWindow::on_pushContinueButton_clicked()
 {

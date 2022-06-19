@@ -108,34 +108,20 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>670</x>
-      <y>420</y>
+      <x>690</x>
+      <y>450</y>
       <width>105</width>
       <height>35</height>
      </rect>
     </property>
     <property name="text">
-     <string>Continue</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushBackButton">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>460</y>
-      <width>105</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Voltar</string>
+     <string>Lugares</string>
     </property>
    </widget>
    <zorder>label</zorder>
    <zorder>pushContinueButton</zorder>
    <zorder>comboBox_sus</zorder>
    <zorder>textSus</zorder>
-   <zorder>pushBackButton</zorder>
    <zorder>textBrowser</zorder>
   </widget>
  </widget>
