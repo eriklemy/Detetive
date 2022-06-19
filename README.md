@@ -28,7 +28,20 @@ Com o Qt instalado:
 
 __Obs__: Caso de erro no build final, seguir a instrução e selecionar o compilador que for recomendado pelo Qt
 
-### HISTORIA EM CONSTRUÇÃO
+
+### Tela inicial - teste
+<img src = "https://github.com/eriklemy/Truth-Table/blob/main/prints/print_Execucao_2variaveis.png?raw=true">
+
+### Tela de opções - teste
+<img src = "https://github.com/eriklemy/Truth-Table/blob/main/prints/print_Execucao_2variaveis.png?raw=true">
+
+<img src = "https://github.com/eriklemy/Truth-Table/blob/main/prints/print_Execucao_2variaveis.png?raw=true">
+
+### Dicas 
+
+
+
+### RESUMO DA HISTORIA
 ---
 Incidente no reino..
 
