@@ -1,29 +1,28 @@
-#ifndef SIXTHWINDOW_H
-#define SIXTHWINDOW_H
+#ifndef PATHWINDOW_H
+#define PATHWINDOW_H
 
 #include "headers/secwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
-class SixthWindow;
+class PathWindow;
 }
 
-class SixthWindow : public QMainWindow
+class PathWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit SixthWindow(QWidget *parent = nullptr);
-    ~SixthWindow();
-
+    explicit PathWindow(QWidget *parent = nullptr);
+    ~PathWindow();
 private slots:
     void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
     void on_pushInicioButton_clicked();
-
+    
 private:
-    Ui::SixthWindow *ui;
+    Ui::PathWindow *ui;
     SecWindow *secWindow = new SecWindow();
 };
 
-#endif // SIXTHWINDOW_H
+#endif // PATHWINDOW_H

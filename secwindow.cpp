@@ -59,6 +59,9 @@ void SecWindow::getScreen()
     ThirteenthWindow *screenEleven = new ThirteenthWindow(this);
     FourteenthWindow *screenTwelve = new FourteenthWindow(this);
     FifteenthWindow *screenThirteen = new FifteenthWindow(this);
+    SixteenthWindow *screenFourteen = new SixteenthWindow(this);
+    SeventeenthWindow *screenFifteen = new SeventeenthWindow(this);
+    PathWindow *path = new PathWindow(this);
 
     switch (screenChose) {
         case 0:  screenOne->show();      break;
@@ -74,6 +77,9 @@ void SecWindow::getScreen()
         case 10: screenEleven->show();   break;
         case 11: screenTwelve->show();   break;
         case 12: screenThirteen->show(); break;
+        case 13: screenFourteen->show(); break;
+        case 14: screenFifteen->show();  break;
+        case 15: path->show();           break;
         default: screenOne->show();      break;
     }
 }
