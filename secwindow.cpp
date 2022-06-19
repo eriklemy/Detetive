@@ -29,7 +29,9 @@ SecWindow::~SecWindow()
 void SecWindow::on_pushContinueButton_clicked()
 {
     this->hide();
-    getScreen();
+    PathWindow *path = new PathWindow(this);
+    path->show();
+
 }
 
 void SecWindow::on_pushInicioButton_clicked()
@@ -80,7 +82,7 @@ void SecWindow::getScreen()
         case 13: screenFourteen->show(); break;
         case 14: screenFifteen->show();  break;
         case 15: path->show();           break;
-        default: screenOne->show();      break;
+        default: ui->setupUi(this);      break;
     }
 }
 

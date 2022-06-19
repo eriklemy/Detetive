@@ -1,6 +1,7 @@
 #include "headers/seventeenthwindow.h"
 #include "headers/mainwindow.h"
 
+#include "headers/pathwindow.h"
 #include "ui/ui_seventeenthwindow.h"
 #include <QPixmap>
 #include <QMessageBox>
@@ -29,7 +30,8 @@ SeventeenthWindow::~SeventeenthWindow()
 void SeventeenthWindow::on_pushBackButton_clicked()
 {
     hide();
-
+    PathWindow *path = new PathWindow();
+    path->show();
 }
 
 

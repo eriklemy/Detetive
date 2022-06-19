@@ -78,7 +78,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>250</x>
       <y>470</y>
       <width>325</width>
       <height>35</height>
@@ -155,11 +155,21 @@ p, li { white-space: pre-wrap; }
       <string>m</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>n</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>o</string>
+     </property>
+    </item>
    </widget>
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>680</x>
+      <x>600</x>
       <y>470</y>
       <width>105</width>
       <height>35</height>
@@ -178,8 +188,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="pushInicioButton">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>510</y>
+      <x>710</x>
+      <y>470</y>
       <width>105</width>
       <height>35</height>
      </rect>
@@ -256,14 +266,14 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; font-style:italic; color:#ffffff;&quot;&gt;Lugares&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <zorder>textLugar</zorder>
+   <zorder>comboBox</zorder>
    <zorder>label</zorder>
    <zorder>textBrowser</zorder>
    <zorder>pushContinueButton</zorder>
-   <zorder>comboBox</zorder>
    <zorder>pushInicioButton</zorder>
    <zorder>comboBox_suspeitos</zorder>
    <zorder>textSus</zorder>
-   <zorder>textLugar</zorder>
   </widget>
  </widget>
  <resources/>

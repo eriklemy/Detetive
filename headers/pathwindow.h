@@ -15,11 +15,14 @@ class PathWindow : public QMainWindow
 public:
     explicit PathWindow(QWidget *parent = nullptr);
     ~PathWindow();
+    int screenChosed = -1;
+
 private slots:
     void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
     void on_pushInicioButton_clicked();
-    
+    void getScreen();
+
 private:
     Ui::PathWindow *ui;
     SecWindow *secWindow = new SecWindow();
