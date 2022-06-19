@@ -16,6 +16,8 @@ SeventhWindow::SeventhWindow(QWidget *parent) :
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
     ui->textSus->viewport()->setAutoFillBackground(false);
+    path = new PathWindow(this);
+
     ui->comboBox_sus->addItems(path->listOfSuspects);
     path->hour++;
 }

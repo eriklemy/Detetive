@@ -66,7 +66,6 @@ void PathWindow::getScreen()
         case 9:  screenTen->show();      break;
         case 10: screenEleven->show();   break;
         case 11: screenTwelve->show();   break;
-
         default:
             QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
             break;
@@ -75,11 +74,10 @@ void PathWindow::getScreen()
 
 void PathWindow::on_pushOkButton_clicked()
 {
-    this->pathChose = ui->listWidget->currentRow();
     if(this->hour < 7)
     {
         this->hide();
-        getScreen();
+        this->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um Suspeito", QMessageBox::Ok);
 }
@@ -90,3 +88,9 @@ void PathWindow::on_pushInicioButton_clicked()
     MainWindow *mainWindow = new MainWindow(this);
     mainWindow->show();
 }
+
+void PathWindow::on_listWidget_currentRowChanged(int currentRow)
+{
+    pathChose = currentRow;
+}
+

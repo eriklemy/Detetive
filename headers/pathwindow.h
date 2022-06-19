@@ -16,8 +16,8 @@ public:
     explicit PathWindow(QWidget *parent = nullptr);
     ~PathWindow();
 
-    qint32 hour = 0;
-    qint32 pathChose = 0;
+    int hour = 0;
+    int pathChose = 0;
     void getScreen();
     QStringList listOfSuspects;
 
@@ -25,6 +25,8 @@ private slots:
     void on_pushBackButton_clicked();
     void on_pushInicioButton_clicked();
     void on_pushOkButton_clicked();
+
+    void on_listWidget_currentRowChanged(int currentRow);
 
 private:
     Ui::PathWindow *ui;

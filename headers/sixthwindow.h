@@ -23,8 +23,6 @@ private slots:
 private:
     Ui::SixthWindow *ui;
     PathWindow *path;
-
-
 };
 
 #endif // SIXTHWINDOW_H
