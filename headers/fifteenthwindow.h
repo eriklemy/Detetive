@@ -22,7 +22,6 @@ private slots:
 private:
     Ui::FifteenthWindow *ui;
     PathWindow *path;
-
 };
 
 #endif // FIFTEENTHWINDOW_H

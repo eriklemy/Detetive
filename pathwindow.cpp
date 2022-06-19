@@ -25,8 +25,8 @@ PathWindow::PathWindow(QWidget *parent) :
     listOfSuspects.append("Duque");
     listOfSuspects.append("Forasteiro");
     ui->comboBox_sus->addItems(listOfSuspects);
-
 }
+
 
 PathWindow::~PathWindow()
 {
@@ -79,7 +79,6 @@ void PathWindow::getScreen()
         QMessageBox::information(this, "popup", "Voce errou!!", QMessageBox::Ok);
         on_pushInicioButton_clicked();
     }
-
     else vitoria->show();
 }
 

@@ -14,9 +14,10 @@ class PathWindow : public QMainWindow
 
 public:
     explicit PathWindow(QWidget *parent = nullptr);
+    PathWindow(int hour): hour(hour) {};
     ~PathWindow();
 
-    int hour = 0;
+    int hour;
     int pathChose = 0;
     void getScreen();
     QStringList listOfSuspects;
