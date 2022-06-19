@@ -14,7 +14,6 @@ EighthWindow::EighthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaEnfermagem.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
-    ui->textSus->viewport()->setAutoFillBackground(false);
     path = new PathWindow(this);
     path->hour++;
 }

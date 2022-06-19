@@ -13,7 +13,6 @@ SeventhWindow::SeventhWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
-    ui->textSus->viewport()->setAutoFillBackground(false);
 
     path = new PathWindow(this);
     path->hour++;
