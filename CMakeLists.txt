@@ -18,6 +18,7 @@ set(TS_FILES Detetive_pt_BR.ts)
 
 set(PROJECT_SOURCES
     main.cpp
+    headers.h
     ./mainwindow.cpp
     ./headers/mainwindow.h
     ./ui/mainwindow.ui

@@ -12,7 +12,7 @@ FifthWindow::FifthWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/wallpaper1.jpeg");
-    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
+    ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);

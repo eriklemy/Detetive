@@ -1,18 +1,4 @@
-#include "headers/mainwindow.h"
-#include "headers/thirdwindow.h"
-#include "headers/forthwindow.h"
-#include "headers/fifthwindow.h"
-#include "headers/sixthwindow.h"
-#include "headers/seventhwindow.h"
-#include "headers/eighthwindow.h"
-#include "headers/ninthwindow.h"
-#include "headers/tenthwindow.h"
-#include "headers/eleventhwindow.h"
-#include "headers/twelfthwindow.h"
-#include "headers/thirteenthwindow.h"
-#include "headers/fourteenthwindow.h"
-#include "headers/fifteenthwindow.h"
-
+#include "headers.h"
 #include "headers/secwindow.h"
 
 #include "ui/ui_secwindow.h"
@@ -25,7 +11,7 @@ SecWindow::SecWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
-    ui->label->setPixmap(pix.scaled(1080,720, Qt::KeepAspectRatioByExpanding));
+    ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textBrowser->viewport()->setAutoFillBackground(false);
     ui->textSus->viewport()->setAutoFillBackground(false);
