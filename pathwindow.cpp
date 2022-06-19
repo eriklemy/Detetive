@@ -12,7 +12,7 @@ PathWindow::PathWindow(QWidget *parent) :
     ui(new Ui::PathWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/castle.jpg");
+    QPixmap pix(":/Images/TelaPath.jpg");
     ui->label->setPixmap(pix.scaled(1366, 768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);

@@ -58,16 +58,6 @@
      <string>Lugares</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_sus">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>480</y>
-      <width>100</width>
-      <height>35</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="textSus">
     <property name="geometry">
      <rect>
@@ -117,11 +107,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <zorder>label</zorder>
-   <zorder>pushContinueButton</zorder>
-   <zorder>textSus</zorder>
-   <zorder>comboBox_sus</zorder>
-   <zorder>textBrowser</zorder>
   </widget>
  </widget>
  <resources/>

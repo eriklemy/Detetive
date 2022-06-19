@@ -45,16 +45,6 @@
      <string/>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox_sus">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>480</y>
-      <width>100</width>
-      <height>35</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="textSus">
     <property name="geometry">
      <rect>
@@ -117,7 +107,6 @@ p, li { white-space: pre-wrap; }
    </widget>
    <zorder>label</zorder>
    <zorder>textBrowser</zorder>
-   <zorder>comboBox_sus</zorder>
    <zorder>pushContinueButton</zorder>
    <zorder>textSus</zorder>
   </widget>

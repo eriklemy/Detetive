@@ -16,8 +16,6 @@ EleventhWindow::EleventhWindow(QWidget *parent) :
 
     ui->textSus->viewport()->setAutoFillBackground(false);
     path = new PathWindow(this);
-
-    ui->comboBox_sus->addItems(path->listOfSuspects);
     path->hour++;
 }
 
@@ -31,6 +29,7 @@ void EleventhWindow::on_pushContinueButton_clicked()
     if(path->hour < 7)
     {
         hide();
+        path = new PathWindow(this);
         path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);

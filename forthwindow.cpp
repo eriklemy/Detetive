@@ -14,7 +14,6 @@ ForthWindow::ForthWindow(QWidget *parent) :
 
     ui->textSus->viewport()->setAutoFillBackground(false);
     path = new PathWindow(this);
-    ui->comboBox_sus->addItems(path->listOfSuspects);
 }
 
 ForthWindow::~ForthWindow()

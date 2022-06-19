@@ -15,5 +15,6 @@
         <file>Images/telaInicial.jpg</file>
         <file>Images/TelaMercadoCentral.jpg</file>
         <file>Images/TelaPracaCental.jpg</file>
+        <file>Images/TelaPath.jpg</file>
     </qresource>
 </RCC>
