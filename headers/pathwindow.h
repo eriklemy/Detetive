@@ -1,7 +1,6 @@
 #ifndef PATHWINDOW_H
 #define PATHWINDOW_H
 
-#include "headers/secwindow.h"
 #include <QMainWindow>
 #include <QStringList>
 
@@ -16,8 +15,9 @@ class PathWindow : public QMainWindow
 public:
     explicit PathWindow(QWidget *parent = nullptr);
     ~PathWindow();
+    int hour = 7;
+    int pathChose = -1;
     QStringList listOfSuspects;
-    int screenChosed = -1;
 
 private slots:
     void on_pushBackButton_clicked();
@@ -27,7 +27,6 @@ private slots:
 
 private:
     Ui::PathWindow *ui;
-    SecWindow *secWindow = new SecWindow();
 };
 
 #endif // PATHWINDOW_H

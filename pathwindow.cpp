@@ -1,8 +1,8 @@
-#include "headers/pathwindow.h"
-#include "headers/mainwindow.h"
 #include "headers.h"
 
+#include "headers/pathwindow.h"
 #include "ui/ui_pathwindow.h"
+
 #include <QPixmap>
 #include <QMessageBox>
 #include <QListWidget>
@@ -38,13 +38,13 @@ void PathWindow::on_pushBackButton_clicked()
 
 void PathWindow::on_pushContinueButton_clicked()
 {
-    screenChosed = ui->listWidget->currentRow();
-    if(secWindow->day <= 7)
+    this->pathChose = ui->listWidget->currentRow();
+    if(this->hour < 7)
     {
         hide();
         getScreen();
     }
-    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
+    else QMessageBox::information(this, "popup", "Voce precisa escolher um Suspeito", QMessageBox::Ok);
 }
 
 void PathWindow::on_pushInicioButton_clicked()
@@ -72,7 +72,7 @@ void PathWindow::getScreen()
     SixteenthWindow *screenFourteen = new SixteenthWindow(this);
     SeventeenthWindow *screenFifteen = new SeventeenthWindow(this);
 
-    switch (screenChosed) {
+    switch (pathChose) {
         case 0:  screenOne->show();      break;
         case 1:  screenTwo->show();      break;
         case 2:  screenThree->show();    break;
