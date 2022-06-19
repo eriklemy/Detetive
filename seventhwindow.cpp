@@ -16,11 +16,8 @@ SeventhWindow::SeventhWindow(QWidget *parent) :
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-
-    secWindow->day++;
-    secWindow->list.append("suspeito 5");
-    ui->comboBox_sus->addItems(secWindow->list);
-
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 SeventhWindow::~SeventhWindow()
@@ -35,13 +32,13 @@ void SeventhWindow::on_pushBackButton_clicked()
     sixthWindow->show();
 }
 
-
 void SeventhWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
         hide();
-        secWindow->getScreen();
+        path = new PathWindow(this);
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

@@ -15,7 +15,7 @@ TwelfthWindow::TwelfthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
 }
 
 TwelfthWindow::~TwelfthWindow()
@@ -33,10 +33,10 @@ void TwelfthWindow::on_pushBackButton_clicked()
 
 void TwelfthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
         hide();
-        secWindow->getScreen();
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

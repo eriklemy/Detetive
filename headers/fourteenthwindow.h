@@ -1,7 +1,7 @@
 #ifndef FOURTEENTHWINDOW_H
 #define FOURTEENTHWINDOW_H
 
-#include "headers/secwindow.h"
+#include "headers/pathwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -22,8 +22,6 @@ private slots:
 
 private:
     Ui::FourteenthWindow *ui;
-    SecWindow *secWindow = new SecWindow();
-
-};
+    PathWindow *path;};
 
 #endif // FOURTEENTHWINDOW_H

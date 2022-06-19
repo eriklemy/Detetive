@@ -16,10 +16,8 @@ FifthWindow::FifthWindow(QWidget *parent) :
 
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
-
-    secWindow->day++;
-    secWindow->list.append("suspeito 3");
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 FifthWindow::~FifthWindow()
@@ -37,10 +35,11 @@ void FifthWindow::on_pushBackButton_clicked()
 
 void FifthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
         hide();
-        secWindow->getScreen();
+        path = new PathWindow(this);
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

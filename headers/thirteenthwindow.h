@@ -1,7 +1,7 @@
 #ifndef THIRTEENTHWINDOW_H
 #define THIRTEENTHWINDOW_H
 
-#include "headers/secwindow.h"
+#include "headers/pathwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::ThirteenthWindow *ui;
-    SecWindow *secWindow = new SecWindow();
+    PathWindow *path;
 };
 
 #endif // THIRTEENTHWINDOW_H

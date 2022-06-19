@@ -34,6 +34,7 @@ void ForthWindow::on_pushBackButton_clicked()
 void ForthWindow::on_pushContinueButton_clicked()
 {
     hide();
+    path = new PathWindow(this);
     path->show();
 }
 

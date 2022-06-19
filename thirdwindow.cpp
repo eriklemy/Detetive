@@ -1,5 +1,5 @@
 #include "headers/thirdwindow.h"
-#include "headers/forthwindow.h"
+
 #include "headers/mainwindow.h"
 #include "headers/secwindow.h"
 
@@ -24,7 +24,7 @@ ThirdWindow::~ThirdWindow()
 
 void ThirdWindow::on_pushContinueButton_clicked()
 {
-    hide();
+    this->hide();
     path = new PathWindow(this);
     path->show();
 }

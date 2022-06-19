@@ -24,6 +24,6 @@ private slots:
 private:
     Ui::ThirdWindow *ui;
     PathWindow *path;
-};
 
+};
 #endif // THIRDWINDOW_H

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "headers/secwindow.h"
+#include "headers/pathwindow.h"
 
 namespace Ui {
 class SixteenthWindow;
@@ -22,7 +23,7 @@ private slots:
 
 private:
     Ui::SixteenthWindow *ui;    
-    SecWindow *secWindow = new SecWindow();
+    PathWindow *path;
 };
 
 #endif // SIXTEENTHWINDOW_H

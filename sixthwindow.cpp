@@ -1,6 +1,5 @@
 #include "headers/sixthwindow.h"
 #include "headers/fifthwindow.h"
-#include "headers/mainwindow.h"
 
 #include "ui/ui_sixthwindow.h"
 #include <QPixmap>
@@ -17,9 +16,9 @@ SixthWindow::SixthWindow(QWidget *parent) :
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
 
-    secWindow->day++;
-    secWindow->list.append("suspeito 4");
-    ui->comboBox_sus->addItems(secWindow->list);
+    path = new PathWindow(this);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 SixthWindow::~SixthWindow()
@@ -34,13 +33,12 @@ void SixthWindow::on_pushBackButton_clicked()
     fifthWindow->show();
 }
 
-
 void SixthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
-        hide();
-        secWindow->getScreen();
+        this->hide();
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

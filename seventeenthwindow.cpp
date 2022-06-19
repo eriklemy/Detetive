@@ -15,7 +15,8 @@ SeventeenthWindow::SeventeenthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 SeventeenthWindow::~SeventeenthWindow()
@@ -26,17 +27,16 @@ SeventeenthWindow::~SeventeenthWindow()
 void SeventeenthWindow::on_pushBackButton_clicked()
 {
     hide();
-    PathWindow *path = new PathWindow();
+    path = new PathWindow();
     path->show();
 }
 
-
 void SeventeenthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
         hide();
-        secWindow->getScreen();
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

@@ -142,12 +142,12 @@ p, li { white-space: pre-wrap; }
     </property>
    </widget>
    <zorder>label</zorder>
-   <zorder>comboBox_sus</zorder>
-   <zorder>textSus</zorder>
    <zorder>textBrowser</zorder>
-   <zorder>pushBackButton</zorder>
-   <zorder>pushInicioButton</zorder>
+   <zorder>comboBox_sus</zorder>
    <zorder>pushContinueButton</zorder>
+   <zorder>pushInicioButton</zorder>
+   <zorder>pushBackButton</zorder>
+   <zorder>textSus</zorder>
   </widget>
  </widget>
  <resources/>

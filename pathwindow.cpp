@@ -34,6 +34,8 @@ PathWindow::~PathWindow()
 void PathWindow::on_pushBackButton_clicked()
 {
     hide();
+    ThirdWindow *thirdWindow = new ThirdWindow(this);
+    thirdWindow->show();
 }
 
 void PathWindow::on_pushContinueButton_clicked()
@@ -41,7 +43,7 @@ void PathWindow::on_pushContinueButton_clicked()
     this->pathChose = ui->listWidget->currentRow();
     if(this->hour < 7)
     {
-        hide();
+        this->hide();
         getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um Suspeito", QMessageBox::Ok);
@@ -50,7 +52,7 @@ void PathWindow::on_pushContinueButton_clicked()
 void PathWindow::on_pushInicioButton_clicked()
 {
     hide();
-    MainWindow *mainWindow = new MainWindow();
+    MainWindow *mainWindow = new MainWindow(this);
     mainWindow->show();
 }
 
@@ -72,7 +74,7 @@ void PathWindow::getScreen()
     SixteenthWindow *screenFourteen = new SixteenthWindow(this);
     SeventeenthWindow *screenFifteen = new SeventeenthWindow(this);
 
-    switch (pathChose) {
+    switch (this->pathChose) {
         case 0:  screenOne->show();      break;
         case 1:  screenTwo->show();      break;
         case 2:  screenThree->show();    break;
@@ -88,7 +90,9 @@ void PathWindow::getScreen()
         case 12: screenThirteen->show(); break;
         case 13: screenFourteen->show(); break;
         case 14: screenFifteen->show();  break;
-        default: ui->setupUi(this);      break;
+        default:
+            QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
+            break;
     }
 }
 

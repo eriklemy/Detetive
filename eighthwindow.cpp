@@ -15,7 +15,8 @@ EighthWindow::EighthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 EighthWindow::~EighthWindow()
@@ -30,13 +31,13 @@ void EighthWindow::on_pushBackButton_clicked()
     sixthWindow->show();
 }
 
-
 void EighthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
+    if(path->hour < 7)
     {
         hide();
-        secWindow->getScreen();
+        path = new PathWindow(this);
+        path->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

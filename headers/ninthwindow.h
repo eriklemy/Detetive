@@ -1,7 +1,7 @@
 #ifndef NINTHWINDOW_H
 #define NINTHWINDOW_H
 
-#include "headers/secwindow.h"
+#include "headers/pathwindow.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::NinthWindow *ui;
-    SecWindow *secWindow = new SecWindow();
+    PathWindow *path;
 };
 
 #endif // NINTHWINDOW_H

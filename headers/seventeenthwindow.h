@@ -2,7 +2,7 @@
 #define SEVENTEENTHWINDOW_H
 
 #include <QMainWindow>
-#include "headers/secwindow.h"
+#include "headers/pathwindow.h"
 
 namespace Ui {
 class SeventeenthWindow;
@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::SeventeenthWindow *ui;
-    SecWindow *secWindow = new SecWindow();
+    PathWindow *path;
 
 };
 

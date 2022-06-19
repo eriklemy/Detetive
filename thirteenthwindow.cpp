@@ -15,7 +15,8 @@ ThirteenthWindow::ThirteenthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
+    path->hour++;
 }
 
 ThirteenthWindow::~ThirteenthWindow()
@@ -29,7 +30,6 @@ void ThirteenthWindow::on_pushBackButton_clicked()
     TwelfthWindow *twelfthWindow = new TwelfthWindow(this);
     twelfthWindow->show();
 }
-
 
 void ThirteenthWindow::on_pushContinueButton_clicked()
 {
