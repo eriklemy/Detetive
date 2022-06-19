@@ -1,10 +1,19 @@
 <RCC>
     <qresource prefix="/">
-        <file>Images/castle.jpg</file>
-        <file>Images/menu.jpeg</file>
-        <file>Images/wolf.jpg</file>
-        <file>Images/taverna.jpg</file>
-        <file>Images/wallpaper1.jpeg</file>
-        <file>Images/j4uakmaghau61.jpg</file>
+        <file>Images/TelabairoMoradores.jpg</file>
+        <file>Images/TelaBiblioteca.jpg</file>
+        <file>Images/TelaCasaDoDuke.jpg</file>
+        <file>Images/TelaCorteDoRei.jpg</file>
+        <file>Images/TelaDragao.jpg</file>
+        <file>Images/TelaEnfermagem.jpg</file>
+        <file>Images/TelaEntradaCapital.jpg</file>
+        <file>Images/TelaInicial.jpg</file>
+        <file>Images/TelaParteBaixa.jpg</file>
+        <file>Images/TelaRei.jpg</file>
+        <file>Images/TelaTaverna.jpg</file>
+        <file>Images/TelaEstalagem.png</file>
+        <file>Images/telaInicial.jpg</file>
+        <file>Images/TelaMercadoCentral.jpg</file>
+        <file>Images/TelaPracaCental.jpg</file>
     </qresource>
 </RCC>

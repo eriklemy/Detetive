@@ -11,7 +11,7 @@ EleventhWindow::EleventhWindow(QWidget *parent) :
     ui(new Ui::EleventhWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/j4uakmaghau61.jpg");
+    QPixmap pix(":/Images/TelaTaverna.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);

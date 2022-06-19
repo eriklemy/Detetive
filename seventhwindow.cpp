@@ -9,7 +9,7 @@ SeventhWindow::SeventhWindow(QWidget *parent) :
     ui(new Ui::SeventhWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/j4uakmaghau61.jpg");
+    QPixmap pix(":/Images/TelaCorteDoRei.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 

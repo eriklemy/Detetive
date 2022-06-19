@@ -9,7 +9,7 @@ FifteenthWindow::FifteenthWindow(QWidget *parent) :
     ui(new Ui::FifteenthWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/castle.jpg");
+    QPixmap pix(":/Images/TelaEstalagem.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textSus->viewport()->setAutoFillBackground(false);
 

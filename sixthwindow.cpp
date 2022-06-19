@@ -9,8 +9,8 @@ SixthWindow::SixthWindow(QWidget *parent) :
     ui(new Ui::SixthWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/castle.jpg");
-    ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
+    QPixmap pix(":/Images/TelaEstalagem.jpg");
+    ui->label->setPixmap(pix.scaled(1366, 768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
 

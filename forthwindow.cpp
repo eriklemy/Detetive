@@ -9,7 +9,7 @@ ForthWindow::ForthWindow(QWidget *parent) :
     ui(new Ui::ForthWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/j4uakmaghau61.jpg");
+    QPixmap pix(":/Images/TelaPracaCental.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);

@@ -9,7 +9,7 @@ TwelfthWindow::TwelfthWindow(QWidget *parent) :
     ui(new Ui::TwelfthWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/j4uakmaghau61.jpg");
+    QPixmap pix(":/Images/TelaEntradaCapital.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);

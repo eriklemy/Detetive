@@ -19,6 +19,7 @@ PathWindow::PathWindow(QWidget *parent) :
     ui->listWidget->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
 
+    listOfSuspects.append("None");
     listOfSuspects.append("Bardo");
     listOfSuspects.append("Ladino");
     listOfSuspects.append("Duque");
@@ -40,32 +41,30 @@ void PathWindow::on_pushBackButton_clicked()
 
 void PathWindow::getScreen()
 {
-    ThirdWindow *screenOne = new ThirdWindow(this);
-    ForthWindow *screenTwo = new ForthWindow(this);
-    FifthWindow *screenThree = new FifthWindow(this);
-    SixthWindow *screenFour = new SixthWindow(this);
-    SeventhWindow *screenFive = new SeventhWindow(this);
-    EighthWindow *screenSix = new EighthWindow(this);
-    NinthWindow *screenSeven = new NinthWindow(this);
-    TenthWindow *screenEigth = new TenthWindow(this);
-    EleventhWindow *screenNine = new EleventhWindow(this);
-    TwelfthWindow *screenTen = new TwelfthWindow(this);
-    ThirteenthWindow *screenEleven = new ThirteenthWindow(this);
-    FourteenthWindow *screenTwelve = new FourteenthWindow(this);
+    ForthWindow *praca = new ForthWindow(this);
+    FifthWindow *mercado = new FifthWindow(this);
+    SixthWindow *estalagem = new SixthWindow(this);
+    SeventhWindow *corteRei = new SeventhWindow(this);
+    EighthWindow *enfermagem = new EighthWindow(this);
+    NinthWindow *casaDuque = new NinthWindow(this);
+    TenthWindow *biblioteca = new TenthWindow(this);
+    EleventhWindow *taverna = new EleventhWindow(this);
+    TwelfthWindow *entradaCapital = new TwelfthWindow(this);
+    ThirteenthWindow *bairro = new ThirteenthWindow(this);
+    FourteenthWindow *parteBaixa = new FourteenthWindow(this);
 
     switch (pathChose) {
-        case 0:  screenOne->show();      break;
-        case 1:  screenTwo->show();      break;
-        case 2:  screenThree->show();    break;
-        case 3:  screenFour->show();     break;
-        case 4:  screenFive->show();     break;
-        case 5:  screenSix->show();      break;
-        case 6:  screenSeven->show();    break;
-        case 7:  screenEigth->show();    break;
-        case 8:  screenNine->show();     break;
-        case 9:  screenTen->show();      break;
-        case 10: screenEleven->show();   break;
-        case 11: screenTwelve->show();   break;
+        case 0:  praca->show();      break;
+        case 1:  mercado->show();      break;
+        case 2:  estalagem->show();    break;
+        case 3:  corteRei->show();     break;
+        case 4:  enfermagem->show();     break;
+        case 5:  casaDuque->show();      break;
+        case 6:  biblioteca->show();    break;
+        case 7:  taverna->show();    break;
+        case 8:  entradaCapital->show();     break;
+        case 9:  bairro->show();      break;
+        case 10: parteBaixa->show();   break;
         default:
             QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
             break;
