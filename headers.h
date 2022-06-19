@@ -11,5 +11,6 @@
 #include "headers/twelfthwindow.h"
 #include "headers/thirteenthwindow.h"
 #include "headers/fourteenthwindow.h"
+#include "headers/fifteenthwindow.h"
 
 #include "headers/pathwindow.h"

@@ -25,7 +25,6 @@ private slots:
     void on_pushBackButton_clicked();
     void on_pushInicioButton_clicked();
     void on_pushOkButton_clicked();
-
     void on_listWidget_currentRowChanged(int currentRow);
 
 private:

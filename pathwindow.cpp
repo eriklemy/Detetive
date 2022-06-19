@@ -25,6 +25,7 @@ PathWindow::PathWindow(QWidget *parent) :
     listOfSuspects.append("Duque");
     listOfSuspects.append("Forasteiro");
     ui->comboBox_sus->addItems(listOfSuspects);
+
 }
 
 PathWindow::~PathWindow()
@@ -52,23 +53,34 @@ void PathWindow::getScreen()
     TwelfthWindow *entradaCapital = new TwelfthWindow(this);
     ThirteenthWindow *bairro = new ThirteenthWindow(this);
     FourteenthWindow *parteBaixa = new FourteenthWindow(this);
+    FifteenthWindow *vitoria = new FifteenthWindow(this);
 
-    switch (pathChose) {
-        case 0:  praca->show();      break;
-        case 1:  mercado->show();      break;
-        case 2:  estalagem->show();    break;
-        case 3:  corteRei->show();     break;
-        case 4:  enfermagem->show();     break;
-        case 5:  casaDuque->show();      break;
-        case 6:  biblioteca->show();    break;
-        case 7:  taverna->show();    break;
-        case 8:  entradaCapital->show();     break;
-        case 9:  bairro->show();      break;
-        case 10: parteBaixa->show();   break;
-        default:
-            QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
-            break;
+    if(ui->comboBox_sus->currentText() == "None")
+    {
+        switch (pathChose) {
+            case 0:  praca->show();      break;
+            case 1:  mercado->show();      break;
+            case 2:  estalagem->show();    break;
+            case 3:  corteRei->show();     break;
+            case 4:  enfermagem->show();     break;
+            case 5:  casaDuque->show();      break;
+            case 6:  biblioteca->show();    break;
+            case 7:  taverna->show();    break;
+            case 8:  entradaCapital->show();     break;
+            case 9:  bairro->show();      break;
+            case 10: parteBaixa->show();   break;
+            default:
+                QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
+                break;
+        }
     }
+    else if(ui->comboBox_sus->currentText() != "Bardo")
+    {
+        QMessageBox::information(this, "popup", "Voce errou!!", QMessageBox::Ok);
+        on_pushInicioButton_clicked();
+    }
+
+    else vitoria->show();
 }
 
 void PathWindow::on_pushOkButton_clicked()

@@ -13,6 +13,7 @@ ForthWindow::ForthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     path = new PathWindow(this);
+    path->hour++;
 }
 
 ForthWindow::~ForthWindow()
