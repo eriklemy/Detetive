@@ -30,7 +30,7 @@ __Obs__: Caso de erro no build final, seguir a instrução e selecionar o compil
 
 
 ### Tela inicial - teste
-<img src = "https://github.com/eriklemy/Truth-Table/blob/main/prints/print_Execucao_2variaveis.png?raw=true">
+<img src = "https://github.com/eriklemy/Detetive/blob/main/screenshots/startscreen.png">
 
 ### Tela de opções - teste
 <img src = "https://media.discordapp.net/attachments/750497804824084510/987900825160515634/unknown.png?width=796&height=467">
