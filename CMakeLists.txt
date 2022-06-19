@@ -64,12 +64,6 @@ set(PROJECT_SOURCES
     ./fifteenthwindow.cpp
     ./headers/fifteenthwindow.h
     ./ui/fifteenthwindow.ui
-    ./sixteenthwindow.cpp
-    ./headers/sixteenthwindow.h
-    ./ui/sixteenthwindow.ui
-    ./seventeenthwindow.cpp
-    ./headers/seventeenthwindow.h
-    ./ui/seventeenthwindow.ui
     ./pathwindow.cpp
     ./headers/pathwindow.h
     ./ui/pathwindow.ui

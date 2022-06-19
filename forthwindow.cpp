@@ -38,10 +38,4 @@ void ForthWindow::on_pushContinueButton_clicked()
     path->show();
 }
 
-void ForthWindow::on_pushInicioButton_clicked()
-{
-    hide();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
-}
 

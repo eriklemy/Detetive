@@ -1,5 +1,6 @@
-#include "headers.h"
+#include "headers/mainwindow.h"
 #include "headers/secwindow.h"
+#include "headers/thirdwindow.h"
 
 #include "ui/ui_secwindow.h"
 #include <QPixmap>
@@ -35,6 +36,4 @@ void SecWindow::on_pushInicioButton_clicked()
     MainWindow *mainWindow = new MainWindow(this);
     mainWindow->show();
 }
-
-
 

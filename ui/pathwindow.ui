@@ -55,7 +55,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushContinueButton">
+   <widget class="QPushButton" name="pushOkButton">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -65,7 +65,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Continue</string>
+     <string>Confirmar</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textSus">
@@ -667,7 +667,7 @@ p, li { white-space: pre-wrap; }
    <zorder>label</zorder>
    <zorder>pushBackButton</zorder>
    <zorder>textLugar</zorder>
-   <zorder>pushContinueButton</zorder>
+   <zorder>pushOkButton</zorder>
    <zorder>textSus</zorder>
    <zorder>pushInicioButton</zorder>
    <zorder>comboBox_sus</zorder>

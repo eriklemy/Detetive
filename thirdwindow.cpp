@@ -36,10 +36,3 @@ void ThirdWindow::on_pushBackButton_clicked()
     secWindow->show();
 }
 
-void ThirdWindow::on_pushInicioButton_clicked()
-{
-    hide();
-    MainWindow *mainWindow = new MainWindow(this);
-    mainWindow->show();
-}
-

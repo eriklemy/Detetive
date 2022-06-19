@@ -15,7 +15,7 @@ class PathWindow : public QMainWindow
 public:
     explicit PathWindow(QWidget *parent = nullptr);
     ~PathWindow();
-public:
+
     qint32 hour = 0;
     qint32 pathChose = 0;
     void getScreen();
@@ -23,8 +23,8 @@ public:
 
 private slots:
     void on_pushBackButton_clicked();
-    void on_pushContinueButton_clicked();
     void on_pushInicioButton_clicked();
+    void on_pushOkButton_clicked();
 
 private:
     Ui::PathWindow *ui;
