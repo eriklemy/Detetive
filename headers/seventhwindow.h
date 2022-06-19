@@ -19,7 +19,6 @@ public:
 private slots:
     void on_pushBackButton_clicked();
     void on_pushContinueButton_clicked();
-    void on_pushInicioButton_clicked();
 
 private:
     Ui::SeventhWindow *ui;

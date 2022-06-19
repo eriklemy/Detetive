@@ -1,6 +1,7 @@
 #ifndef FORTHWINDOW_H
 #define FORTHWINDOW_H
 
+#include "headers/pathwindow.h"
 #include "headers/secwindow.h"
 #include <QMainWindow>
 
@@ -23,8 +24,7 @@ private slots:
 
 private:
     Ui::ForthWindow *ui;
-    SecWindow *secWindow = new SecWindow();
-
+    PathWindow *path = new PathWindow(this);
 };
 
 #endif // FORTHWINDOW_H

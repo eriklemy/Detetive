@@ -3,6 +3,7 @@
 
 #include "headers/secwindow.h"
 #include <QMainWindow>
+#include <QStringList>
 
 namespace Ui {
 class PathWindow;
@@ -15,6 +16,7 @@ class PathWindow : public QMainWindow
 public:
     explicit PathWindow(QWidget *parent = nullptr);
     ~PathWindow();
+    QStringList listOfSuspects;
     int screenChosed = -1;
 
 private slots:

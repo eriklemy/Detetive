@@ -15,10 +15,6 @@ TenthWindow::TenthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->textLugar->viewport()->setAutoFillBackground(false);
-
-    secWindow->day++;
-    secWindow->list.append("suspeito 8");
     ui->comboBox_sus->addItems(secWindow->list);
 }
 
@@ -45,10 +41,4 @@ void TenthWindow::on_pushContinueButton_clicked()
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }
 
-void TenthWindow::on_pushInicioButton_clicked()
-{
-    hide();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
-}
 

@@ -15,11 +15,7 @@ ForthWindow::ForthWindow(QWidget *parent) :
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->textLugar->viewport()->setAutoFillBackground(false);
-
-    secWindow->day++;
-    secWindow->list.append("suspeito 2");
-    ui->comboBox_sus->addItems(secWindow->list);
+    ui->comboBox_sus->addItems(path->listOfSuspects);
 }
 
 ForthWindow::~ForthWindow()
@@ -37,12 +33,8 @@ void ForthWindow::on_pushBackButton_clicked()
 
 void ForthWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
-    {
-        hide();
-        secWindow->getScreen();
-    }
-    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
+    hide();
+    path->show();
 }
 
 void ForthWindow::on_pushInicioButton_clicked()

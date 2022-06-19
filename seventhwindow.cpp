@@ -16,7 +16,6 @@ SeventhWindow::SeventhWindow(QWidget *parent) :
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->textLugar->viewport()->setAutoFillBackground(false);
 
     secWindow->day++;
     secWindow->list.append("suspeito 5");
@@ -45,12 +44,5 @@ void SeventhWindow::on_pushContinueButton_clicked()
         secWindow->getScreen();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
-}
-
-void SeventhWindow::on_pushInicioButton_clicked()
-{
-    hide();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
 }
 

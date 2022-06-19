@@ -179,19 +179,6 @@ p, li { white-space: pre-wrap; }
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushInicioButton">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>500</y>
-      <width>105</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Inicio</string>
-    </property>
-   </widget>
    <widget class="QTextBrowser" name="textSus">
     <property name="geometry">
      <rect>
@@ -247,7 +234,6 @@ p, li { white-space: pre-wrap; }
    <zorder>comboBox_sus</zorder>
    <zorder>pushContinueButton</zorder>
    <zorder>textLugar</zorder>
-   <zorder>pushInicioButton</zorder>
    <zorder>textSus</zorder>
    <zorder>comboBox</zorder>
   </widget>

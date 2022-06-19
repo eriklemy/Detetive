@@ -19,9 +19,11 @@ PathWindow::PathWindow(QWidget *parent) :
     ui->listWidget->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
 
-    secWindow->day++;
-    secWindow->list.append("suspeito 3");
-    ui->comboBox_sus->addItems(secWindow->list);
+    listOfSuspects.append("Bardo");
+    listOfSuspects.append("Ladino");
+    listOfSuspects.append("Duque");
+    listOfSuspects.append("Forasteiro");
+    ui->comboBox_sus->addItems(listOfSuspects);
 }
 
 PathWindow::~PathWindow()

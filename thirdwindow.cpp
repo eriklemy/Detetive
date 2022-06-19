@@ -15,11 +15,6 @@ ThirdWindow::ThirdWindow(QWidget *parent) :
     QPixmap pix(":/Images/wolf.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textSus->viewport()->setAutoFillBackground(false);
-    ui->textLugar->viewport()->setAutoFillBackground(false);
-
-    secWindow->day++;
-    secWindow->list.append("suspeito 1");
-    ui->comboBox_sus->addItems(secWindow->list);
 }
 
 ThirdWindow::~ThirdWindow()
@@ -29,17 +24,15 @@ ThirdWindow::~ThirdWindow()
 
 void ThirdWindow::on_pushContinueButton_clicked()
 {
-    if(secWindow->day <= 7)
-    {
-        hide();
-        secWindow->getScreen();
-    }
-    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
+    hide();
+    path = new PathWindow(this);
+    path->show();
 }
 
 void ThirdWindow::on_pushBackButton_clicked()
 {
     hide();
+    SecWindow *secWindow = new SecWindow(this);
     secWindow->show();
 }
 
@@ -50,7 +43,3 @@ void ThirdWindow::on_pushInicioButton_clicked()
     mainWindow->show();
 }
 
-void ThirdWindow::on_comboBox_activated(int index)
-{
-   secWindow->screenChose = index + 1;
-}

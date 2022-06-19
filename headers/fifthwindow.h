@@ -17,7 +17,6 @@ public:
     ~FifthWindow();
 
 private slots:
-    void on_pushInicioButton_clicked();
     void on_pushContinueButton_clicked();
     void on_pushBackButton_clicked();
 

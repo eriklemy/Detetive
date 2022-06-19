@@ -44,11 +44,3 @@ void SixthWindow::on_pushContinueButton_clicked()
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }
-
-void SixthWindow::on_pushInicioButton_clicked()
-{
-    hide();
-    MainWindow *mainWindow = new MainWindow();
-    mainWindow->show();
-}
-

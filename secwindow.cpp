@@ -11,14 +11,11 @@ SecWindow::SecWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/castle.jpg");
-    ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
+    ui->label->setPixmap(pix.scaled(1366, 768, Qt::KeepAspectRatioByExpanding));
 
     ui->textBrowser->viewport()->setAutoFillBackground(false);
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
-
-    list.append("None");
-    ui->comboBox_suspeitos->addItems(list);
 }
 
 SecWindow::~SecWindow()
@@ -28,10 +25,9 @@ SecWindow::~SecWindow()
 
 void SecWindow::on_pushContinueButton_clicked()
 {
-    this->hide();
-    PathWindow *path = new PathWindow(this);
-    path->show();
-
+    hide();
+    ThirdWindow *thirdWindow = new ThirdWindow(this);
+    thirdWindow->show();
 }
 
 void SecWindow::on_pushInicioButton_clicked()
