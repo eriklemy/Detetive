@@ -11,6 +11,7 @@ SixthWindow::SixthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/TelaEstalagem.jpg");
     ui->label->setPixmap(pix.scaled(1366, 768, Qt::KeepAspectRatioByExpanding));
+    ui->textBrowser->viewport()->setAutoFillBackground(false);
 
     path = new PathWindow(this);
     path->hour++;

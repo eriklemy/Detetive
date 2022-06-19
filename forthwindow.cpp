@@ -11,6 +11,8 @@ ForthWindow::ForthWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix(":/Images/TelaPracaCental.jpg");
     ui->label->setPixmap(pix.scaled(1920, 1080, Qt::KeepAspectRatio));
+    ui->textBrowser->viewport()->setAutoFillBackground(false);
+    ui->textBrowser->viewport()->setAutoFillBackground(false);
 
     path = new PathWindow(this);
     path->hour++;

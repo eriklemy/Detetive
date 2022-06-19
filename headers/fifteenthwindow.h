@@ -17,7 +17,7 @@ public:
     ~FifteenthWindow();
 
 private slots:
-    void on_pushContinueButton_clicked();
+    void on_pushInicioButton_clicked();
 
 private:
     Ui::FifteenthWindow *ui;

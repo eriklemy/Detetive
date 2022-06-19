@@ -20,8 +20,8 @@ PathWindow::PathWindow(QWidget *parent) :
     ui->textLugar->viewport()->setAutoFillBackground(false);
 
     listOfSuspects.append("None");
-    listOfSuspects.append("Bardo");
     listOfSuspects.append("Ladino");
+    listOfSuspects.append("Bardo");
     listOfSuspects.append("Duque");
     listOfSuspects.append("Forasteiro");
     ui->comboBox_sus->addItems(listOfSuspects);
@@ -76,7 +76,8 @@ void PathWindow::getScreen()
     }
     else if(ui->comboBox_sus->currentText() != "Bardo")
     {
-        QMessageBox::information(this, "popup", "Voce errou!!", QMessageBox::Ok);
+        QMessageBox::information(this, "popup",
+                                 "O capitão sentenciou o suspeito errado e após encontra-lo, ele não estava com a obra de arte do dragão. Fazendo assim com que se inicie o maior massacre da história.", QMessageBox::Ok);
         on_pushInicioButton_clicked();
     }
     else vitoria->show();
