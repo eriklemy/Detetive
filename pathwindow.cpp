@@ -84,12 +84,12 @@ void PathWindow::getScreen()
 
 void PathWindow::on_pushOkButton_clicked()
 {
-    if(this->hour < 7)
+    if(this->hour > 7)
     {
-        this->hide();
-        this->getScreen();
+        QMessageBox::information(this, "popup", "Voce precisa escolher um Suspeito", QMessageBox::Ok);
     }
-    else QMessageBox::information(this, "popup", "Voce precisa escolher um Suspeito", QMessageBox::Ok);
+    this->hide();
+    this->getScreen();
 }
 
 void PathWindow::on_pushInicioButton_clicked()

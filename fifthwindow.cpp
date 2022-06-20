@@ -25,9 +25,9 @@ void FifthWindow::on_pushContinueButton_clicked()
     hide();    
     path = new PathWindow(this);
     path->hour++;
-    if(path->hour < 7)
+    if(path->hour > 7)
     {
-        path->show();
+        QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
     }
-    else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
+    path->show();
 }
