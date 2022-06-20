@@ -12,7 +12,6 @@ ThirdWindow::ThirdWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaRei.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-
 }
 
 ThirdWindow::~ThirdWindow()

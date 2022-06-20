@@ -21,7 +21,8 @@ private slots:
 
 private:
     Ui::ForthWindow *ui;
-    PathWindow *path;
+    PathWindow *path = new PathWindow(this);
+
 };
 
 #endif // FORTHWINDOW_H

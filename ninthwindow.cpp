@@ -28,7 +28,7 @@ void NinthWindow::on_pushContinueButton_clicked()
     {
         this->hide();
         path = new PathWindow(this);
-        path->getScreen();
+        path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

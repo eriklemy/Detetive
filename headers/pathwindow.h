@@ -17,7 +17,7 @@ public:
     PathWindow(int hour): hour(hour) {};
     ~PathWindow();
 
-    int hour;
+    int hour = 0;
     int pathChose = 0;
     void getScreen();
     QStringList listOfSuspects;

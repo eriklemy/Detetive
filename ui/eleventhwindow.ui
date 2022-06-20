@@ -68,10 +68,10 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-40</x>
-      <y>307</y>
+      <x>0</x>
+      <y>0</y>
       <width>1366</width>
-      <height>481</height>
+      <height>768</height>
      </rect>
     </property>
     <property name="maximumSize">

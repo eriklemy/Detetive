@@ -29,15 +29,15 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>-30</x>
       <y>0</y>
-      <width>1366</width>
+      <width>1400</width>
       <height>768</height>
      </rect>
     </property>
     <property name="maximumSize">
      <size>
-      <width>1366</width>
+      <width>1400</width>
       <height>768</height>
      </size>
     </property>

@@ -29,7 +29,7 @@ void TenthWindow::on_pushContinueButton_clicked()
         hide();
         path = new PathWindow(this);
 
-        path->getScreen();
+        path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

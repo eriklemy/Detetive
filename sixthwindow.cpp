@@ -9,7 +9,7 @@ SixthWindow::SixthWindow(QWidget *parent) :
     ui(new Ui::SixthWindow)
 {
     ui->setupUi(this);
-    QPixmap pix(":/Images/TelaEstalagem.jpg");
+    QPixmap pix(":/Images/TelaEstalagem.png");
     ui->label->setPixmap(pix.scaled(1366, 768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
@@ -29,7 +29,7 @@ void SixthWindow::on_pushContinueButton_clicked()
         this->hide();
         path = new PathWindow(this);
 
-        path->getScreen();
+        path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }

@@ -10,12 +10,11 @@ ForthWindow::ForthWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap pix(":/Images/TelaPracaCental.jpg");
-    ui->label->setPixmap(pix.scaled(1920, 1080, Qt::KeepAspectRatio));
-    ui->textBrowser->viewport()->setAutoFillBackground(false);
+    ui->label->setPixmap(pix.scaled(1500, 768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
 
-    path = new PathWindow(this);
     path->hour++;
+    path->pathChose = -1;
 }
 
 ForthWindow::~ForthWindow()
@@ -28,8 +27,7 @@ void ForthWindow::on_pushContinueButton_clicked()
     if(path->hour < 7)
     {
         hide();
-        path = new PathWindow(this);
-        path->getScreen();
+        path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
 }
