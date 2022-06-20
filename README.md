@@ -34,8 +34,10 @@ O Grande Incidente
 
 O dragão com uma de suas obras roubadas, inicia um ataque a capital do reino com gritos de raiva ordena, que o que é seu por direito seja devolvido e teriam até o pôr do sol para que o entreguem.
 
->! Após o ataque o capitão ordenado pelo rei para descobrir o culpado e recebe a dica que o dragão tendo doença por obras de arte, em suas buscas descobriu que um historiador localizou uma obra de arte rara que estava com o dragão e que falou com o bardo que roubou do dragão, o bardo sendo capturado e a obra recuperada, é entregue ao dragão evitando um massacre na capital.
-
+>! Após o ataque o capitão ordenado pelo rei para descobrir o 
+>! culpado e recebe a dica que o dragão tendo doença por obras >! de arte, em suas buscas descobriu que um historiador 
+>! localizou uma obra de arte rara que estava com o dragão e que >! falou com o bardo que roubou do dragão, o bardo sendo 
+>! capturado e a obra recuperada, é entregue ao dragão evitando >! um massacre na capital.
 
 ### Tela inicial
 <img src = "https://github.com/eriklemy/Detetive/blob/main/screenshots/startscreen.png">
