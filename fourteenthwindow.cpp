@@ -14,9 +14,6 @@ FourteenthWindow::FourteenthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaParteBaixa.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-
-    path = new PathWindow(this);
-    path->hour++;
 }
 
 FourteenthWindow::~FourteenthWindow()
@@ -26,11 +23,11 @@ FourteenthWindow::~FourteenthWindow()
 
 void FourteenthWindow::on_pushContinueButton_clicked()
 {
+    hide();    
+    path = new PathWindow(this);
+    path->hour++;
     if(path->hour < 7)
     {
-        hide();
-        path = new PathWindow(this);
-
         path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);

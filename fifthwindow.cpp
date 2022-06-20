@@ -12,9 +12,6 @@ FifthWindow::FifthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaMercadoCentral.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-
-    path = new PathWindow(this);
-    path->hour++;
 }
 
 FifthWindow::~FifthWindow()
@@ -24,9 +21,11 @@ FifthWindow::~FifthWindow()
 
 void FifthWindow::on_pushContinueButton_clicked()
 {
+    hide();    
+    path = new PathWindow(this);
+    path->hour++;
     if(path->hour < 7)
     {
-        this->hide();
         path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);

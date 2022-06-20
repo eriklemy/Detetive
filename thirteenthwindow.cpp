@@ -12,9 +12,6 @@ ThirteenthWindow::ThirteenthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelabairoMoradores.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-
-    path = new PathWindow(this);
-    path->hour++;
 }
 
 ThirteenthWindow::~ThirteenthWindow()
@@ -24,11 +21,11 @@ ThirteenthWindow::~ThirteenthWindow()
 
 void ThirteenthWindow::on_pushContinueButton_clicked()
 {
+    hide();    
+    path = new PathWindow(this);
+    path->hour++;
     if(path->hour < 7)
     {
-        hide();
-        path = new PathWindow(this);
-
         path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);

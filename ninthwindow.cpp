@@ -12,9 +12,6 @@ NinthWindow::NinthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaCasaDoDuke.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
-
-    path = new PathWindow(this);
-    path->hour++;
 }
 
 NinthWindow::~NinthWindow()
@@ -24,10 +21,11 @@ NinthWindow::~NinthWindow()
 
 void NinthWindow::on_pushContinueButton_clicked()
 {
+    hide();    
+    path = new PathWindow(this);
+    path->hour++;
     if(path->hour < 7)
     {
-        this->hide();
-        path = new PathWindow(this);
         path->show();
     }
     else QMessageBox::information(this, "popup", "Voce precisa escolher um suspeito", QMessageBox::Ok);
