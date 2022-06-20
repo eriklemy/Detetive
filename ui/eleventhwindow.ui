@@ -71,7 +71,7 @@ p, li { white-space: pre-wrap; }
       <x>0</x>
       <y>0</y>
       <width>1366</width>
-      <height>768</height>
+      <height>481</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -84,8 +84,8 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <zorder>textBrowser</zorder>
    <zorder>label</zorder>
+   <zorder>textBrowser</zorder>
    <zorder>pushContinueButton</zorder>
   </widget>
  </widget>
