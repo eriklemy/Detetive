@@ -12,6 +12,7 @@ NinthWindow::NinthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaCasaDoDuke.jpg");
     ui->label->setPixmap(pix.scaled(1366,768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
+    ui->textBrowser->setStyleSheet("border: solid 20px grey;  background-color: rgba(33, 24, 0, 79); color:rgb(0,255,0)");
 }
 
 NinthWindow::~NinthWindow()

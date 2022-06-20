@@ -18,6 +18,7 @@ PathWindow::PathWindow(QWidget *parent) :
     ui->textSus->viewport()->setAutoFillBackground(false);
     ui->listWidget->viewport()->setAutoFillBackground(false);
     ui->textLugar->viewport()->setAutoFillBackground(false);
+    ui->listWidget->setStyleSheet("border: solid 20px grey;  background-color: rgba(33, 24, 0, 79); color:rgb(0,255,0)");
 
     listOfSuspects.append("None");
     listOfSuspects.append("Ladino");
@@ -58,20 +59,18 @@ void PathWindow::getScreen()
     if(ui->comboBox_sus->currentText() == "None")
     {
         switch (pathChose) {
-            case 0:  praca->show();      break;
-            case 1:  mercado->show();      break;
-            case 2:  estalagem->show();    break;
-            case 3:  corteRei->show();     break;
+            case 0:  praca->show();          break;
+            case 1:  mercado->show();        break;
+            case 2:  estalagem->show();      break;
+            case 3:  corteRei->show();       break;
             case 4:  enfermagem->show();     break;
             case 5:  casaDuque->show();      break;
-            case 6:  biblioteca->show();    break;
-            case 7:  taverna->show();    break;
-            case 8:  entradaCapital->show();     break;
-            case 9:  bairro->show();      break;
-            case 10: parteBaixa->show();   break;
-            default:
-                QMessageBox::information(this, "popup", "Nenhum Caminho Selecionado!!", QMessageBox::Ok);
-                break;
+            case 6:  biblioteca->show();     break;
+            case 7:  taverna->show();        break;
+            case 8:  entradaCapital->show(); break;
+            case 9:  bairro->show();         break;
+            case 10: parteBaixa->show();     break;
+            default:  ;
         }
     }
     else if(ui->comboBox_sus->currentText() != "Bardo")

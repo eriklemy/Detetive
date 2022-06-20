@@ -12,6 +12,7 @@ ForthWindow::ForthWindow(QWidget *parent) :
     QPixmap pix(":/Images/TelaPracaCental.jpg");
     ui->label->setPixmap(pix.scaled(1500, 768, Qt::KeepAspectRatioByExpanding));
     ui->textBrowser->viewport()->setAutoFillBackground(false);
+    ui->textBrowser->setStyleSheet("border: solid 20px grey;  background-color: rgba(33, 24, 0, 79); color:rgb(0,255,0)");
 }
 
 ForthWindow::~ForthWindow()

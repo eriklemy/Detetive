@@ -14,7 +14,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    int propTeste = 1;
 
 private slots:
     void on_playButton_clicked();
