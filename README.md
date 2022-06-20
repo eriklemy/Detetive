@@ -26,10 +26,7 @@ Com o Qt instalado:
     6. Buildar e Rodar
 </pre>
 
-__Obs__: Caso de erro no build final, seguir a instrução e selecionar o compilador que for recomendado pelo Qt
-
-
-
+__Obs__: Caso de erro no build final, seguir a instrução do Qt e selecionar o compilador que for recomendado para instanciar como um novo projeto.
 
 ### RESUMO DA HISTORIA
 ---
