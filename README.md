@@ -30,11 +30,12 @@ __Obs__: Caso de erro no build final, seguir a instrução do Qt e selecionar o 
 
 ### RESUMO DA HISTORIA
 ---
-Incidente no reino..
+O Grande Gncidente 
 
-Após um ataque de dragão na capital do reino sobre grandes gritos de raiva do dragão, foi descoberto que ele foi triado e causando a destruição da capital e morte de muitos civis.
+O dragão com uma de suas obras roubadas, inicia um ataque a capital do reino com gritos de raiva ordena, que o que é seu por direito seja devolvido e teriam até o pôr do sol para que o entreguem.
 
-O capitão da guarda foi comandado a resolver o caso do dragão que mantinha uma relação com o reino de comum acordo que em ele não seria atacado e que ele também não ataria o reino, após uma busca próxima a caverna do dragão foi encontrado uma serie de pegadas e marcas de carroça que remetem a carroças de nobres, além disso, marcas de caixas espalhadas pelo local.
+Após o ataque o capitão ordenado pelo rei para descobrir o culpado e recebe a dica que o dragão sendo doença por obras de arte, em suas buscas descobriu que um historiador descobriu sobre uma obra rara que estava com o dragão e que falou com o bardo que roubou do dragão, o bardo sendo capturado e a obra recuperada, é entregue ao dragão evitando um massacre na capital.
+
 
 ### Tela inicial
 <img src = "https://github.com/eriklemy/Detetive/blob/main/screenshots/startscreen.png">
