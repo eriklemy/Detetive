@@ -29,7 +29,7 @@
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>590</x>
       <y>490</y>
       <width>105</width>
       <height>35</height>

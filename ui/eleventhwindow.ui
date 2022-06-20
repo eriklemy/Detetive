@@ -29,8 +29,8 @@
    <widget class="QPushButton" name="pushContinueButton">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>480</y>
+      <x>590</x>
+      <y>490</y>
       <width>105</width>
       <height>35</height>
      </rect>
@@ -57,12 +57,12 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;O capitão vai até a taverna ela sendo mais distante da central da cidade, não sofreu com os ataques do dragão e toda a sua estrutura estava perfeita, o ambiente ali nem parecia que o ataque do dragão aconteceu, ninguém preocupado com o ocorrido e todos ali bebendo, comendo e rindo.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;O taverneiro mesmo que preocupado com o ocorrido não deixou de atender a todos que estavam ali, o capitão pergunta se alguém ligado a obras esteve por aqui e ele diz que sim, um moço chegou e pediu para se hospedar aqui e que iria ficar um tempo com o quarto reservado.&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;O capitão ainda pede se o taverneiro ainda tinha mais alguma informação que poderia ser útil a única que ele diz que o bardo sempre fala com todos que passam na taverna e que é contratado para cantar, porém antes do ataque ele já não tinha vindo trabalhar. &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Premissa  -  O bardo estava na taverna então falou com todos na taverna.  &lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline;&quot;&gt;Premissa  -  O historiador se hospedou na taverna então ele estava na taverna&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;O capitão vai até a taverna ela sendo mais distante da central da cidade, não sofreu com os ataques do dragão e toda a sua estrutura estava perfeita, o ambiente ali nem parecia que o ataque do dragão aconteceu, ninguém preocupado com o ocorrido e todos ali bebendo, comendo e rindo.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;O taverneiro mesmo que preocupado com o ocorrido não deixou de atender a todos que estavam ali, o capitão pergunta se alguém ligado a obras esteve por aqui e ele diz que sim, um moço chegou e pediu para se hospedar aqui e que iria ficar um tempo com o quarto reservado.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;O capitão ainda pede se o taverneiro ainda tinha mais alguma informação que poderia ser útil a única que ele diz que o bardo sempre fala com todos que passam na taverna e que é contratado para cantar, porém antes do ataque ele já não tinha vindo trabalhar. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline; color:#ffffff;&quot;&gt;Premissa  -  O bardo estava na taverna então falou com todos na taverna.  &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; text-decoration: underline; color:#ffffff;&quot;&gt;Premissa  -  O historiador se hospedou na taverna então ele estava na taverna&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
